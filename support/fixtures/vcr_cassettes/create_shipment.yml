@@ -1,0 +1,728 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.royalmailgroup.com/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.3.4.1, ruby 2.2.1 (2015-02-26))
+      Accept:
+      - "*/*"
+      Date:
+      - Wed, 15 Jul 2015 13:28:44 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      X-Referer:
+      - ''
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Wed, 15 Jul 2015 13:27:51 GMT
+      X-Sourcepath:
+      - www.royalmailgroup.com/
+      Link:
+      - </node/166>; rel="shortlink",</home>; rel="canonical"
+      Keep-Alive:
+      - timeout=15, max=100
+      X-Time:
+      - 0.011954s
+      Content-Language:
+      - en
+      Accept-Ranges:
+      - bytes
+      X-Cache-Rule:
+      - ZCacheNoSession1
+      X-Dc:
+      - DC1
+      X-Sourceip:
+      - 217.64.226.211
+      Last-Modified:
+      - Wed, 15 Jul 2015 13:07:52 GMT
+      X-Rule:
+      - Echo
+      X-Original-Host-Header:
+      - www.royalmailgroup.com
+      Content-Length:
+      - '62931'
+      X-Cache-Info:
+      - cached
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" \"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" version=\"XHTML+RDFa
+        1.0\" dir=\"ltr\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=utf-8\" />\n  <meta http-equiv=\"Content-Style-Type\" content=\"text/css\"
+        />\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n  <meta
+        http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n<meta
+        content=\"Welcome to Royal Mail Group\" name=\"keywords\" />\n<link rel=\"shortcut
+        icon\" href=\"//www.royalmailgroup.com/sites/default/files/rmgicon_0.ico\"
+        type=\"image/vnd.microsoft.icon\" />\n<meta content=\"Welcome to Royal Mail
+        Group\" name=\"description\" />\n<link rel=\"shortlink\" href=\"/node/166\"
+        />\n<meta name=\"Generator\" content=\"Drupal 7 (http://drupal.org)\" />\n<link
+        rel=\"canonical\" href=\"/home\" />\n  <title>Welcome to Royal Mail Group</title>\n
+        \ <link type=\"text/css\" rel=\"stylesheet\" href=\"//www.royalmailgroup.com/sites/default/files/advagg_css/css__BJ6Ou6QsBRtnFTmxaakamOIS8n4QswDP2XnnZ1sxtaM__NBuvkP6eInGIkb1aJvUHx5PX79XApuxBDkk_77W5tYk__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.css\"
+        media=\"all\" />\n<link type=\"text/css\" rel=\"stylesheet\" href=\"//www.royalmailgroup.com/sites/default/files/advagg_css/css__Bqg1SDmp9CAe6XEIkqmrkRsGk0iHTZHCcB95hCAlYnY__pvxzJdEyVw_5TVP2BBc6RFQHZTlmfsgpKtyMTJgxw8o__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.css\"
+        media=\"screen\" />\n<link type=\"text/css\" rel=\"stylesheet\" href=\"//www.royalmailgroup.com/sites/default/files/advagg_css/css__NA4KyctGkV1aAMGtOzRHTaKEJ35GOT-gMOv1-drjVXo__zawh8DDAElEDY_LZn-HSGlk3qqnGsfNYhl3VEMp4YDc__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.css\"
+        media=\"all\" />\n  <script type=\"text/javascript\" src=\"//www.royalmailgroup.com/sites/default/files/advagg_js/js__k-mfm_x4lfwsi0M1IRn2FqGMGfU8LbXccluA3ulJj6E__Xucca9mg73OznTBx_BJa98TTnQ-Yid-kvMdsxdNSrhc__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\nif (!window['google']
+        || !window['google']['loader']){ document.write(unescape(\"%3Cscript type=\\\"text/javascript\\\"
+        src=\\\"http://www.google.com/jsapi\\\"%3E%3C/script%3E\")); }\n//--><!]]>\n</script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\n      google.load('search',
+        '1', {language : 'en'});\n      google.setOnLoadCallback(function() {\n        input
+        = document.getElementById('edit-search-block-form--2');\n        // Disable
+        browser's history-based completion\n        input.setAttribute('autocomplete',
+        'off');\n        // Attach Google CSE autocomplete behaviour\n        google.search.CustomSearchControl.attachAutoCompletion(\n
+        \         '014617110493018837824:5wgsel5y0vc', input, 'search-block-form'\n
+        \       );\n      });\n//--><!]]>\n</script>\n<script type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\n
+        \     google.load('search', '1', {language : 'en'});\n      google.setOnLoadCallback(function()
+        {\n        input = document.getElementById('edit-search-block-form--2');\n
+        \       // Disable browser's history-based completion\n        input.setAttribute('autocomplete',
+        'off');\n        // Attach Google CSE autocomplete behaviour\n        google.search.CustomSearchControl.attachAutoCompletion(\n
+        \         '014617110493018837824:5wgsel5y0vc', input, 'search-block-form'\n
+        \       );\n      });\n//--><!]]>\n</script>\n<script type=\"text/javascript\"
+        src=\"//www.royalmailgroup.com/sites/default/files/advagg_js/js__KaZp60twaRFpB7IdN57N22C_sjMQDY1aEnvERtknlIg__-r3dktwf3N86AN7M2CJ3j8jReDRIRiQ7DU4x4Puid0Y__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\nvar _gaq = _gaq || [];_gaq.push([\"_setAccount\",
+        \"UA-31097149-1\"]);_gaq.push([\"_trackPageview\"]);(function() {var ga =
+        document.createElement(\"script\");ga.type = \"text/javascript\";ga.async
+        = true;ga.src = (\"https:\" == document.location.protocol ? \"https://ssl\"
+        : \"http://www\") + \".google-analytics.com/ga.js\";var s = document.getElementsByTagName(\"script\")[0];s.parentNode.insertBefore(ga,
+        s);})();\n//--><!]]>\n</script>\n<script type=\"text/javascript\" src=\"//www.royalmailgroup.com/sites/default/files/advagg_js/js__XwpoAB0grmhd-Z8Q0d2Y1A6AYmSUDY1wH8beXRVr9nA__Iu0bXULjcHDnDpCPWE9x8NV8-ZZSXf1CyBU8j5aNPlg__kRPVmqXWGt-fmYxdi0Arl3nYSu9G_pWtxIucy7aHSt8.js\"></script>\n<script
+        type=\"text/javascript\">\n<!--//--><![CDATA[//><!--\njQuery.extend(Drupal.settings,
+        {\"basePath\":\"\\/\",\"pathPrefix\":\"\",\"ajaxPageState\":{\"theme\":\"rmgd7\",\"theme_token\":\"z8zogDzLYLGiCMKt6M7iIP7RJERkpCfGbyYOt4nCx6s\",\"css\":{\"modules\\/system\\/system.base.css\":1,\"modules\\/system\\/system.menus.css\":1,\"modules\\/system\\/system.messages.css\":1,\"modules\\/system\\/system.theme.css\":1,\"sites\\/all\\/modules\\/contrib\\/tipsy\\/stylesheets\\/tipsy.css\":1,\"misc\\/ui\\/jquery.ui.core.css\":1,\"misc\\/ui\\/jquery.ui.theme.css\":1,\"misc\\/ui\\/jquery.ui.button.css\":1,\"misc\\/ui\\/jquery.ui.resizable.css\":1,\"misc\\/ui\\/jquery.ui.dialog.css\":1,\"modules\\/aggregator\\/aggregator.css\":1,\"sites\\/all\\/modules\\/contrib\\/calendar\\/css\\/calendar_multiday.css\":1,\"sites\\/all\\/modules\\/contrib\\/date\\/date_api\\/date.css\":1,\"sites\\/all\\/modules\\/contrib\\/date\\/date_popup\\/themes\\/datepicker.1.7.css\":1,\"modules\\/field\\/theme\\/field.css\":1,\"modules\\/node\\/node.css\":1,\"modules\\/search\\/search.css\":1,\"modules\\/user\\/user.css\":1,\"sites\\/all\\/modules\\/contrib\\/views\\/css\\/views.css\":1,\"sites\\/all\\/modules\\/contrib\\/ckeditor\\/ckeditor.css\":1,\"sites\\/all\\/modules\\/contrib\\/ctools\\/css\\/ctools.css\":1,\"sites\\/all\\/modules\\/contrib\\/lexicon\\/css\\/lexicon.css\":1,\"public:\\/\\/css\\/menu_icons.css\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/nice_menus.css\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/nice_menus_default.css\":1,\"sites\\/all\\/modules\\/contrib\\/panels\\/css\\/panels.css\":1,\"sites\\/all\\/modules\\/contrib\\/rate\\/rate.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/templates\\/panel\\/home-page\\/..\\/..\\/..\\/css\\/Layout.css\":1,\"sites\\/all\\/modules\\/contrib\\/rate\\/templates\\/thumbs-up-down\\/thumbs-up-down.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/templates\\/panel\\/menu-one-column\\/..\\/..\\/..\\/css\\/Layout.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/templates\\/panel\\/menu-two-column\\/..\\/..\\/..\\/css\\/Layout.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/templates\\/panel\\/menu-three-column\\/..\\/..\\/..\\/css\\/Layout.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Reset.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Common.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Layout.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Link.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Color.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Menu.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Typographics.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/Component.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/admin.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/css\\/modules\\/calendar.css\":1,\"sites\\/all\\/themes\\/rmgd7\\/flags\\/flags16.css\":1},\"js\":{\"sites\\/all\\/modules\\/contrib\\/jquery_update\\/replace\\/jquery\\/1.5\\/jquery.min.js\":1,\"misc\\/jquery.once.js\":1,\"misc\\/drupal.js\":1,\"sites\\/all\\/modules\\/contrib\\/tipsy\\/javascripts\\/jquery.tipsy.js\":1,\"sites\\/all\\/modules\\/contrib\\/tipsy\\/javascripts\\/tipsy.js\":1,\"misc\\/ui\\/jquery.ui.core.min.js\":1,\"misc\\/ui\\/jquery.ui.widget.min.js\":1,\"misc\\/ui\\/jquery.ui.button.min.js\":1,\"misc\\/ui\\/jquery.ui.mouse.min.js\":1,\"misc\\/ui\\/jquery.ui.draggable.min.js\":1,\"misc\\/ui\\/jquery.ui.position.min.js\":1,\"misc\\/ui\\/jquery.ui.resizable.min.js\":1,\"misc\\/ui\\/jquery.ui.dialog.min.js\":1,\"sites\\/all\\/modules\\/contrib\\/views\\/js\\/jquery.ui.dialog.patch.js\":1,\"sites\\/all\\/modules\\/contrib\\/jquery_update\\/replace\\/ui\\/external\\/jquery.cookie.js\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/superfish\\/js\\/superfish.js\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/superfish\\/js\\/jquery.bgiframe.min.js\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/superfish\\/js\\/jquery.hoverIntent.minified.js\":1,\"sites\\/all\\/modules\\/contrib\\/nice_menus\\/nice_menus.js\":1,\"sites\\/all\\/modules\\/contrib\\/panels\\/js\\/panels.js\":1,\"sites\\/all\\/modules\\/custom\\/rmg_cookie_policy\\/rmg_cookie_policy.js\":1,\"sites\\/all\\/modules\\/custom\\/rmg_share_price\\/js\\/rmg_share_price.js\":1,\"sites\\/all\\/themes\\/rmgd7\\/js\\/jquery.jscrollpane.min.js\":1,\"sites\\/all\\/modules\\/contrib\\/rate\\/rate.js\":1,\"sites\\/all\\/modules\\/contrib\\/google_analytics\\/googleanalytics.js\":1,\"sites\\/all\\/themes\\/rmgd7\\/js\\/jquery.rmg.init.2012.js\":1,\"sites\\/all\\/themes\\/rmgd7\\/js\\/jquery.rmg.global.js\":1,\"sites\\/all\\/themes\\/rmgd7\\/js\\/extlink.js\":1,\"sites\\/all\\/themes\\/rmgd7\\/js\\/search.js\":1}},\"nice_menus_options\":{\"delay\":800,\"speed\":1},\"tipsy\":{\"custom_selectors\":[{\"selector\":\".glossary\",\"options\":{\"fade\":1,\"gravity\":\"nw\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"attribute\",\"selector\":\"title\"}}},{\"selector\":\".tooltip-menu\",\"options\":{\"fade\":1,\"gravity\":\"se\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"attribute\",\"selector\":\"title\"}}},{\"selector\":\".tooltip-blue\",\"options\":{\"fade\":1,\"gravity\":\"nw\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"attribute\",\"selector\":\"title\"}}},{\"selector\":\".tooltip\",\"options\":{\"fade\":1,\"gravity\":\"nw\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"attribute\",\"selector\":\"title\"}}},{\"selector\":\".lexicon\",\"options\":{\"fade\":1,\"gravity\":\"nw\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"child\",\"selector\":\".lexiconcontent\"}}},{\"selector\":\".event-cal-selector\",\"options\":{\"fade\":1,\"gravity\":\"nw\",\"trigger\":\"all\",\"delayIn\":\"0\",\"delayOut\":\"0\",\"opacity\":\"1\",\"offset\":\"0\",\"html\":0,\"tooltip_content\":{\"source\":\"child\",\"selector\":\".event-cal-content\"}}}]},\"googleanalytics\":{\"trackOutbound\":1,\"trackMailto\":1,\"trackDownload\":1,\"trackDownloadExtensions\":\"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip\"},\"rmg_media_centre\":{\"rmgCarouselTime\":\"12000\"}});\n//--><!]]>\n</script>\n</head>\n<!--[if
+        lt IE 7 ]> <body class=\"ie ie6 html front not-logged-in no-sidebars page-node
+        page-node- page-node-166 node-type-panel i18n-en\" > <![endif]-->\n<!--[if
+        IE 7 ]> <body class=\"ie ie7 html front not-logged-in no-sidebars page-node
+        page-node- page-node-166 node-type-panel i18n-en\" > <![endif]-->\n<!--[if
+        IE 8 ]> <body class=\"ie ie8 html front not-logged-in no-sidebars page-node
+        page-node- page-node-166 node-type-panel i18n-en\" > <![endif]-->\n<!--[if
+        IE 9 ]> <body class=\"ie ie9 html front not-logged-in no-sidebars page-node
+        page-node- page-node-166 node-type-panel i18n-en\" > <![endif] -->\n<!--[if
+        (gt IE 8)|!(IE)]><!--> <body class=\"html front not-logged-in no-sidebars
+        page-node page-node- page-node-166 node-type-panel i18n-en\" > <!--<![endif]-->\n
+        \   <div class=\"promo-background\">\n  <div class=\"row clearfix\">\n    <div
+        class=\"row-980 clearfix\">\n          </div>\n    <div class=\"row-980 clearfix\">\n
+        \         </div>\n  </div>\n    <div id=\"header\" class=\"row\" role=\"banner\">\n
+        \     <div class=\"region region-preheader\">\n    <div id=\"block-rmg-cookie-policy-cookie-policy\"
+        class=\"block block-rmg-cookie-policy text-color-white\">\n\n    \n  <div
+        class=\"content\">\n    <h2>Your privacy and our use of cookies</h2><p>Cookies
+        help us improve your Royal Mail online experience. If you accept their use,
+        continue using our site. Or, <a href=\"/cookies\" class=\"cookies\">find out
+        more about cookies</a></p>  </div>\n</div>\n  </div>\n    <div class=\"row-980
+        section clearfix\">\n      <a class=\"jump\" href=\"#content\">Skip to content</a>\n
+        \             <div class=\"left text-color-lightest-grey\">\n          <h1>\n
+        \           <img src=\"/sites/all/themes/rmgd7/img/logos/royal-mail-group.png\"
+        alt=\"Royal Mail Group\" width=\"267\" height=\"34\" />\n            <span
+        class=\"element-invisible\">Royal Mail Group</span>\n          </h1>\n        </div>\n
+        \           <div class=\"right\">\n          <div class=\"region region-header\">\n
+        \   <div class=\"right padding_10_23_0_0\"><div id=\"block-search-form\" class=\"block
+        block-search\">\n\n    \n  <div class=\"content\">\n    <form action=\"/\"
+        method=\"post\" id=\"search-block-form\" accept-charset=\"UTF-8\"><div><div
+        class=\"container-inline\" role=\"search\">\n  <div class=\"form-item form-type-textfield
+        form-item-search-block-form\">\n <input class=\"width-144 form-text padding_4_2_4_2
+        form-text\" type=\"text\" id=\"edit-search-block-form--2\" name=\"search_block_form\"
+        value=\"\" size=\"15\" maxlength=\"128\" />\n</div>\n<div class=\"form-actions
+        form-wrapper\" id=\"edit-actions\"><input class=\"primary form-submit\" type=\"submit\"
+        id=\"edit-submit\" name=\"op\" value=\"Search\" /></div><input type=\"hidden\"
+        name=\"form_build_id\" value=\"form-sTuXfo4jveCHvVEWt7WDiDPImsVUAoqH-iWTZuZFvYo\"
+        />\n<input type=\"hidden\" name=\"form_id\" value=\"search_block_form\" />\n</div></div></form>
+        \ </div>\n</div>\n</div><div id=\"site-utility\" class=\"right padding_14\"
+        role=\"navigation\">\n<ul class=\"nice-menu nice-menu-down\" id=\"nice-menu-1\"><li
+        class=\"menu-1054 menu-path-front first  odd \"><a href=\"/\" class=\"active\">Home</a></li>\n<li
+        class=\"menu-1192 menu-path-node-4674 even \"><a href=\"/contactus\">Contact
+        us</a></li>\n<li class=\"menu-2059 menu-path-node-4674 odd  last \"><a href=\"/contactus\">Call
+        us 03457 740 740</a></li>\n</ul>\n</div>\n<div id=\"block-rmg-share-price-share-price\"
+        class=\"block block-rmg-share-price\">\n\n    \n  <div class=\"content\">\n
+        \   <div id=\"share-price\"><a href=\"/investors/share-price-information\"><span
+        id=\"price\"></span></a><span id=\"text\"></span></div>  </div>\n</div>\n
+        \ </div>\n      </div>\n      <div class=\"clear\"></div>\n    </div>\n  </div>\n\n
+        \ <div id=\"topnav\" class=\"row\" role=\"navigation\">\n    <div id=\"nav\"
+        class=\"row-980\">\n        <div class=\"region region-nav\">\n    <div id=\"block-menu-block-rmg-navigation-top\"
+        class=\"block block-menu-block\">\n\n    \n  <div class=\"content\">\n    <ul
+        class=\"muchomenu-menu muchomenu-menu-horizontal\"><li class=\"first leaf
+        has-children menu-mlid-838 muchomenu-parent\"><span class=\"muchomenu-parent-title\"><a
+        href=\"/about-us\" class=\"muchomenu-item\">About us</a></span><div class=\"muchomenu-bin
+        muchomenu-slots\"><div class=\"col-3\">\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/about-us/who-we-are\">Who we
+        are</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/about-us/strategy-0\">Strategy</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/about-us/measuring-performance\">Measuring performance</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/about-us/heritage\">Heritage</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/contactus\">Contact
+        us</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/about-us/management-committees\">Management
+        and Committees</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/about-us/regulation\">Regulation</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/about-us/awards\">Awards</a></li>\n          </ul>\n</div>\n  </div>\n
+        \ <div class=\"clear\"></div>\n</div></div></li>\n<li class=\"leaf has-children
+        menu-mlid-859 muchomenu-parent\"><span class=\"muchomenu-parent-title\"><a
+        href=\"/our-businesses\" class=\"muchomenu-item\">Our businesses</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-1\">\n  <div class=\"col
+        left\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/our-businesses/ukpil-overview\"
+        panel=\"our_businesses\" alignment=\"left\">Royal Mail Group</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/our-businesses/parcelforce-worldwide\">Parcelforce
+        Worldwide</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/general-logistics\">General Logistics Systems</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n<li
+        class=\"leaf has-children menu-mlid-835 muchomenu-parent special position-left-menu\"><span
+        class=\"muchomenu-parent-title\"><a href=\"/our-customers\" class=\"muchomenu-item\">Customers</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-3\">\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/customers/services\">Services</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/customers/customer-commitment\">Customer
+        commitment</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/customers/quality-service\">Quality of Service</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/customers/our-customers-customer-support\">Customer
+        support</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/customers/consumer-campaigns\">Consumer campaigns</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n<li
+        class=\"leaf has-children menu-mlid-1922 muchomenu-parent special position-center\"><span
+        class=\"muchomenu-parent-title\"><a href=\"/investor-centre\" class=\"muchomenu-item\">Investors</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-3\">\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/investors/share-price-information\">Share
+        price information</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/investor-centre/report-download-centre\">Results
+        and reports</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/investors/investor-contacts\">Investor contacts</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/investors/shareholder-communications\">Shareholder
+        communications</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/investor-centre/event-calendar\">Financial
+        calendar</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/investor-centre/presentations-download-centre\">Presentations</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/investors/financial-news\">Investor news</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/investors/corporate-governance\"
+        panel=\"about_us_display_menu\" alignment=\"left\">Corporate governance</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n<li
+        class=\"leaf has-children menu-mlid-860 muchomenu-parent special position-center\"><span
+        class=\"muchomenu-parent-title\"><a href=\"/financial-and-media\" class=\"muchomenu-item\">Media</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-2\">\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/financial-and-media-media-centre/finance-media-press-releases\">Press
+        releases</a></li>\n        <li class=\"first last leaf menu-mlid-2311\"><a
+        href=\"/royal-mail-and-historic-england-launch-new-commitment-preserve-character-and-heritage-post-boxes\">Royal
+        Mail and Historic England launch new commitment to preserve the character
+        and heritage of post boxes</a></li>\n  </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/socialmedia\">Join the conversation</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/financial-and-media/media-contacts\">Media contacts</a></li>\n          </ul>\n</div>\n
+        \ </div>\n  <div class=\"col left margin_0_20_0_0\">\n    <div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/press-centre/video-gallery\">Video library</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/press-centre/image-library\">Image
+        library</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n<li
+        class=\"leaf has-children menu-mlid-857 muchomenu-parent special position-left-menu\"><span
+        class=\"muchomenu-parent-title\"><a href=\"/community\" class=\"muchomenu-item\">Responsibility</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-3\">\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/responsibility/our-approach\">Our
+        approach</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/responsibility/environment\" panel=\"community\">Environment</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/responsibility/policies\">Policies</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/responsibility/cr-reports\">CR
+        reports</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/responsibility/cr-contacts\">CR contacts</a></li>\n
+        \         </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/responsibility/our-people\"
+        panel=\"community\" alignment=\"right_menu\">Our people</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/responsibility/benchmarking-and-awards\">Benchmarking
+        and awards</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"/community-supporting-our-communities/community-charity-year\">Community
+        contribution</a></li>\n          </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n<li
+        class=\"last leaf has-children menu-mlid-853 muchomenu-parent special position-right\"><span
+        class=\"muchomenu-parent-title\"><a href=\"/our-people\" class=\"muchomenu-item\">Careers</a></span><div
+        class=\"muchomenu-bin muchomenu-slots\"><div class=\"col-3\">\n  <div class=\"col
+        left margin_0_20_0_0\">\t\t\t\t\t\t\n    <div class=\"panel-pane pane-menu-tree
+        pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"https://jobs.royalmailgroup.com/\">Job
+        search</a></li>\n          </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/careers/royal-mail\">Royal Mail</a></li>\n
+        \       <li class=\"first last leaf menu-mlid-2040\"><a href=\"/our-people/careers/royal-mail/faqs-about-job-opportunities\">Job
+        opportunities FAQs</a></li>\n  </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"https://jobs.royalmailgroup.com/go/Christmas-Casuals/698901/\"
+        title=\"Christmas casuals\">Christmas Casuals</a></li>\n          </ul>\n</div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-menu-tree pane-main-menu\"
+        >\n    \n  <ul>\n          <li class=\"pane-title\"><a href=\"http://www.parcelforce.com/jobs-and-careers\">Parcelforce</a></li>\n
+        \         </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/careers/our-culture\">Our culture</a></li>\n        <li class=\"first
+        leaf menu-mlid-1156\"><a href=\"/careers/our-culture/overview\">Overview</a></li>\n<li
+        class=\"leaf menu-mlid-1157\"><a href=\"/our-people/our-culture/recognition\">Recognition</a></li>\n<li
+        class=\"leaf has-children menu-mlid-1159\"><a href=\"/careers/our-culture/safety\">Safety</a></li>\n<li
+        class=\"leaf menu-mlid-1163\"><a href=\"/careers/our-culture/diversity-equality-fairness\">Diversity,
+        equality &amp; fairness</a></li>\n<li class=\"leaf menu-mlid-1164\"><a href=\"/our-people/our-culture/training\">Training</a></li>\n<li
+        class=\"last leaf menu-mlid-1775\"><a href=\"/careers/our-culture/pensions\">Pensions</a></li>\n
+        \ </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/our-people/careers/graduate-recruitment\">Graduates</a></li>\n
+        \       <li class=\"first leaf has-children menu-mlid-2035\"><a href=\"/careers/graduates/our-six-graduate-programmes\">Our
+        graduate programmes</a></li>\n<li class=\"leaf menu-mlid-2036\"><a href=\"/careers/graduates/your-development\">Your
+        development</a></li>\n<li class=\"leaf menu-mlid-2037\"><a href=\"/careers/graduates/meet-our-people\">Meet
+        our people</a></li>\n<li class=\"leaf menu-mlid-2038\"><a href=\"/careers/graduates/apply-now\">Apply
+        now</a></li>\n<li class=\"last leaf menu-mlid-2046\"><a href=\"/careers/graduates/graduate-programme-faqs\">Graduate
+        Programme FAQs</a></li>\n  </ul>\n</div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li
+        class=\"pane-title\"><a href=\"/careers/apprenticeships\">Apprenticeships</a></li>\n
+        \       <li class=\"first leaf menu-mlid-2064\"><a href=\"/careers/apprenticeships/our-programmes\">Our
+        programmes</a></li>\n<li class=\"leaf menu-mlid-2066\"><a href=\"/careers/apprenticeships/meet-our-people\">Meet
+        our people</a></li>\n<li class=\"leaf menu-mlid-2067\"><a href=\"/careers/apprenticeships/locations\">Locations</a></li>\n<li
+        class=\"leaf menu-mlid-2068\"><a href=\"/careers/apprenticeships/apply-now\">Apply
+        now</a></li>\n<li class=\"last leaf has-children menu-mlid-2069\"><a href=\"/careers/apprenticeships/apprenticeship-faq\">Apprenticeship
+        FAQ</a></li>\n  </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/careers/logistics-management-trainee-schemes\" panel=\"media\" alignment=\"centre\">Logistics
+        Management Trainee Schemes</a></li>\n        <li class=\"first leaf menu-mlid-2289\"><a
+        href=\"/careers/logistics-management-trainee-schemes/operations-management-trainee-scheme\">Operations
+        scheme</a></li>\n<li class=\"leaf menu-mlid-2290\"><a href=\"/careers/logistics-management-trainee-schemes/fleet-management-trainee-scheme\">Fleet
+        Management scheme</a></li>\n<li class=\"leaf menu-mlid-2291\"><a href=\"/careers/logistics-management-trainee-schemes/network-optimisation-management-trainee-scheme\">Network
+        Optimisation scheme</a></li>\n<li class=\"leaf menu-mlid-2293\"><a href=\"/careers/logistics-management-trainee-schemes/your-development\">Your
+        development</a></li>\n<li class=\"leaf menu-mlid-2292\"><a href=\"/careers/logistics-management-trainee-schemes/locations\">Locations</a></li>\n<li
+        class=\"leaf menu-mlid-2294\"><a href=\"/careers/logistics-management-trainee-schemes/meet-our-people\">Meet
+        our people</a></li>\n<li class=\"last leaf menu-mlid-2295\"><a href=\"/careers/logistics-management-trainee-schemes/apply-now\">Apply
+        now</a></li>\n  </ul>\n</div>\n  </div>\n  <div class=\"col left margin_0_20_0_0\">\t\t\t\t\t\t\n
+        \   <div class=\"panel-pane pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n
+        \         <li class=\"pane-title\"><a href=\"/deliveryjobs\" panel=\"media\"
+        alignment=\"centre\">Delivery opportunities</a></li>\n        <li class=\"first
+        leaf menu-mlid-2299\"><a href=\"/careers/deliveryjobs/about\">About the role</a></li>\n<li
+        class=\"leaf menu-mlid-2300\"><a href=\"/careers/deliveryjobs/why\">Why work
+        for us?</a></li>\n<li class=\"leaf menu-mlid-2301\"><a href=\"/careers/deliveryjobs/who\">Who
+        we&#039;re looking for?</a></li>\n<li class=\"leaf menu-mlid-2302\"><a href=\"/careers/deliveryjobs/benefits\">Benefits</a></li>\n<li
+        class=\"leaf menu-mlid-2304\"><a href=\"/careers/deliveryjobs/meet-our-people\">Meet
+        our people</a></li>\n<li class=\"last leaf menu-mlid-2303\"><a href=\"/careers/deliveryjobs/apply\">Apply</a></li>\n
+        \ </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/our-people/careers/senior-talent-entry-programme\">Senior Talent Entry
+        Programme</a></li>\n        <li class=\"first leaf menu-mlid-2043\"><a href=\"/careers/senior-talent-entry-programme/about-step\">About
+        STEP</a></li>\n<li class=\"leaf menu-mlid-2041\"><a href=\"/careers/senior-talent-entry-programme/about-business\">About
+        the business</a></li>\n<li class=\"leaf menu-mlid-2042\"><a href=\"/careers/senior-talent-entry-programme/why-royal-mail\">Why
+        Royal Mail</a></li>\n<li class=\"leaf menu-mlid-2044\"><a href=\"/node/4707\">Meet
+        our people</a></li>\n<li class=\"last leaf menu-mlid-2045\"><a href=\"/careers/senior-talent-entry-programme/apply-now\">Apply
+        now</a></li>\n  </ul>\n</div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-menu-tree pane-main-menu\" >\n    \n  <ul>\n          <li class=\"pane-title\"><a
+        href=\"/group-technology\">Group Technology</a></li>\n        <li class=\"first
+        leaf menu-mlid-2030\"><a href=\"/what-we-do\">What we do</a></li>\n<li class=\"leaf
+        menu-mlid-2031\"><a href=\"/why-join-us\">Why join us</a></li>\n<li class=\"leaf
+        menu-mlid-2033\"><a href=\"/success-stories\">Success stories</a></li>\n<li
+        class=\"last leaf menu-mlid-2032\"><a href=\"/opportunities\">Opportunities</a></li>\n
+        \ </ul>\n</div>\n  </div>\n  <div class=\"clear\"></div>\n</div></div></li>\n</ul>
+        \ </div>\n</div>\n  </div>\n        <div class=\"region region-sitetools\">\n
+        \   <div id=\"block-block-3\" class=\"block block-block\">\n\n    \n  <div
+        class=\"content\">\n    <ul><li>\n    <a class=\"print tooltip-menu\" href=\"javascript:window.print()\"
+        title=\"Print this page\">Print this page</a>\n  </li>\n<li>\n    <a class=\"glossarylink
+        tooltip-menu\" href=\"/glossary\" original-title=\"Glossary\">A-Z Glossary</a>\n
+        \ </li>\n</ul>  </div>\n</div>\n  </div>\n      <div class=\"clear\"></div>\n
+        \   </div>\n      </div>\n\n          <div role=\"main\" id=\"content\" class=\"row\">\n
+        \     <a id=\"main-content\"></a>\n              <div class=\"region region-content\">\n
+        \   <div id=\"block-system-main\" class=\"block block-system\">\n\n    \n
+        \ <div class=\"content\">\n     \n<div class=\"row carousel_top\">\n  <div
+        class=\"margin_0 container_4\">\n    <div class=\"grid_3 margin_0_20_0_0\">\n
+        \     <div class=\"pane-carousel\">\t\n    <div class=\"view view-carousel
+        view-id-carousel view-display-id-homepage_carousel_block view-dom-id-d77d39695eb52726470df21400f3d20f\">\n
+        \       \n  \n  \n           <div class=\"view-content multiple\">\n      <div
+        class=\"jcarousel-skin-rmgd7 jcarousel-clip jcarousel-clip-horizontal jcarousel-container\">
+        \   <ul class=\"jcarousel-list\">          <li class=\"views-row views-row-1
+        views-row-odd views-row-first jcarousel-item\">  \n          <div class=\"padding23
+        carousel_topleft\">\n      <div class=\"message padding23b\">\n      \r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>
+        \   </div>\n          <div class=\"message-button\">\n      <a href=\"http://www.royalmailgroup.com/royal-mail-issues-special-stamps-mark-75th-anniversary-battle-britain\"
+        class=\"primary chevin-medium-white\">Find out more</a>    </div>\n  </div>\n
+        \   \n          <div class=\"slide-image node-6490\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/carousel_slide/public/0238
+        RMG Website carousel images44.jpg?itok=IGh2OZCg\" width=\"720\" height=\"336\"
+        /></div>  </li>\n          <li class=\"views-row views-row-2 views-row-even
+        jcarousel-item\">  \n          <div class=\"padding23 carousel_topright\">\n
+        \     <div class=\"message padding23b\">\n      \r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>
+        \   </div>\n          <div class=\"message-button\">\n      <a href=\"https://jobs.royalmailgroup.com\"
+        class=\"primary chevin-medium-white\">Find out more</a>    </div>\n  </div>\n
+        \   \n          <div class=\"slide-image node-6398\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/carousel_slide/public/Recruitment
+        site.jpg?itok=gqFY6VMD\" width=\"720\" height=\"336\" /></div>  </li>\n          <li
+        class=\"views-row views-row-3 views-row-odd jcarousel-item\">  \n          <div
+        class=\"padding23 carousel_topleft\">\n      <div class=\"message padding23b\">\n
+        \     \r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>    </div>\n
+        \         <div class=\"message-button\">\n      <a href=\"http://www.royalmailgroup.com/royal-mail-issues-special-stamps-mark-200th-anniversary-battle-waterloo\"
+        class=\"primary chevin-medium-white\">Find out more</a>    </div>\n  </div>\n
+        \   \n          <div class=\"slide-image node-6446\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/carousel_slide/public/The-Battle-of-Waterloo.png?itok=OWQH3Y1W\"
+        width=\"720\" height=\"336\" /></div>  </li>\n          <li class=\"views-row
+        views-row-4 views-row-even jcarousel-item\">  \n          <div class=\"padding23
+        carousel_topleft\">\n      <div class=\"message padding23b\">\n      \r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>
+        \   </div>\n          <div class=\"message-button\">\n      <a href=\"http://www.royalmailgroup.com/about-us/heritage/battle-waterloo-letters-front\"
+        class=\"primary chevin-medium-white\">Find out more</a>    </div>\n  </div>\n
+        \   \n          <div class=\"slide-image node-6445\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/carousel_slide/public/News-of-Waterloo.png?itok=Ln4_zvvU\"
+        width=\"720\" height=\"336\" /></div>  </li>\n          <li class=\"views-row
+        views-row-5 views-row-odd views-row-last jcarousel-item\">  \n          <div
+        class=\"padding23 carousel_topleft\">\n      <div class=\"message padding23b\">\n
+        \     \r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>    </div>\n
+        \         <div class=\"message-button\">\n      <a href=\"http://www.royalmailgroup.com/royal-mail-issues-special-stamps-mark-800th-anniversary-magna-carta\"
+        class=\"primary chevin-medium-white\">Find out more</a>    </div>\n  </div>\n
+        \   \n          <div class=\"slide-image node-6425\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/carousel_slide/public/Magna-Carta.jpg?itok=ofZmGSuT\"
+        width=\"720\" height=\"336\" /></div>  </li>\n      </ul></div>      <ul class=\"jcarousel-control-x\">\n
+        \                         <li class=\"active\">\n            <a href=\"javascript:void(0)\"
+        id=\"jcarousel-slide-0\"><span>slide 1</span></a>\n          </li>\n                  <li>\n
+        \           <a href=\"javascript:void(0)\" id=\"jcarousel-slide-1\"><span>slide
+        2</span></a>\n          </li>\n                  <li>\n            <a href=\"javascript:void(0)\"
+        id=\"jcarousel-slide-2\"><span>slide 3</span></a>\n          </li>\n                  <li>\n
+        \           <a href=\"javascript:void(0)\" id=\"jcarousel-slide-3\"><span>slide
+        4</span></a>\n          </li>\n                  <li>\n            <a href=\"javascript:void(0)\"
+        id=\"jcarousel-slide-4\"><span>slide 5</span></a>\n          </li>\n                      </ul>\n
+        \   </div>\n  \n  \n  \n  \n  \n  \n</div></div>    </div>\n    <div class=\"grid_1
+        grid_1 margin_10_0_0_0\">\n      <div class=\"panel-pane pane-views pane-news-listing\"
+        >\n  \n  <div class=\"news-promo-heading chevron-xlarge-white clearfix\">
+        \     <h2 class=\"pane-title\"><a href=\"/financial-and-media-media-centre/finance-media-press-releases\">Latest
+        News</a></h2>\n    </div><div class=\"clear\"></div>\n  \n  <div class=\"pane-content\">\n
+        \   <div class=\"view view-news-listing view-id-news_listing view-display-id-news_listing_mini_block
+        view-dom-id-e4f31ed239f4afad2d486574beb2731a\">\n        \n  \n  \n      <div
+        class=\"view-content\">\n      <div class=\"news-list\">    <ul class=\"news-promo\">
+        \         <li class=\"views-row views-row-1 views-row-odd views-row-first\">\t\t\t\t\t\t\n<h3>15
+        July 2015</h3><div class=\"article\">\n  <a href=\"/royal-mail-and-historic-england-launch-new-commitment-preserve-character-and-heritage-post-boxes\">\n
+        \ <span class=\"left\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/news_list_mini_thumb/public/field/image/2.
+        VR 1850s Fluted pillarbox, Warwick. Howard Wilson.jpg?itok=tIX_kxI4\" width=\"66\"
+        height=\"46\" /></span>  <span class=\"title\">Royal Mail and Historic England
+        launch new commitment to preserve the character and heritage of post boxes</span>
+        \ </a>\n</div></li>\n          <li class=\"views-row views-row-2 views-row-even\">\t\t\t\t\t\t\n<h3>14
+        July 2015</h3><div class=\"article\">\n  <a href=\"/new-royal-mail-research-reveals-uk-shoppers-will-wait-sales-they-spend-online\">\n
+        \ <span class=\"left\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/news_list_mini_thumb/public/parcel_scanner.jpg?itok=dSk3CVCy\"
+        width=\"66\" height=\"46\" /></span>  <span class=\"title\">New Royal Mail
+        research reveals UK shoppers will wait for sales before they spend online
+        </span>  </a>\n</div></li>\n          <li class=\"views-row views-row-3 views-row-odd
+        views-row-last\">\t\t\t\t\t\t\n<h3>12 July 2015</h3><div class=\"article\">\n
+        \ <a href=\"/royal-mail-issues-special-stamps-mark-75th-anniversary-battle-britain\">\n
+        \ <span class=\"left\"><img src=\"//www.royalmailgroup.com/sites/default/files/styles/news_list_mini_thumb/public/field/image/Battle
+        of Britain Minisheet High-res.jpg?itok=9VQpP-HG\" width=\"66\" height=\"46\"
+        /></span>  <span class=\"title\">Royal Mail issues Special Stamps to mark
+        the 75th anniversary of the Battle of Britain</span>  </a>\n</div></li>\n
+        \     </ul></div>    </div>\n  \n  \n  \n  \n  \n  \n</div>  </div>\n\n  \n
+        \ </div>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n<div
+        class=\"row content\">\n  <div class=\"color-new-grey color-new-grey-gradient
+        padding0b\">\n    <div class=\"container_4\">\n      <div class=\"grid_1\">\n
+        \       <div class=\"panel-pane pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n
+        \   <div id=\"node-4779\" class=\"node node-component clearfix\" about=\"/node/4779\"
+        typeof=\"sioc:Item foaf:Document\">\n  <div class=\"padding_34_0_7_0 title
+        \">\n    <h2><a href=\"/about-us/strategy-0\" class=\"chevron-large text-color-dark-grey\">Strategy</a></h2>\n
+        \ </div>\n  <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/MP145.jpg?itok=UKnGGwAP\"
+        width=\"220\" height=\"147\" alt=\"\" />    </div>\n    <div class=\"border-dotted-light-grey
+        padding10\">\n      <p>Our strategy is to be the best delivery and marketing
+        mail business in the UK.</p>\n    </div>\n  </div>\n  <div>\n      </div>\n</div>\n
+        \ </div>\n\n  \n  </div>\n<div class=\"panel-separator\"></div><div class=\"panel-pane
+        pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-6156\"
+        class=\"node node-component clearfix\" about=\"/node/6156\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"padding_34_0_7_0 title \">\n    <h2><a href=\"http://www.royalmailgroup.com/about-us/heritage/50-years-special-stamps\"
+        class=\"chevron-large text-color-dark-grey\">Special Stamps</a></h2>\n  </div>\n
+        \ <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/Special
+        Stamps pic for 1-col teaser.png?itok=PnW4SCLt\" width=\"220\" height=\"147\"
+        alt=\"\" />    </div>\n    <div class=\"border-dotted-light-grey padding10\">\n
+        \     <p>We mark the 50th anniversary of our <a href=\"http://www.royalmailgroup.com/about-us/heritage/50-years-special-stamps\">Special
+        Stamps</a> programme with a new <a href=\"http://www.rmspecialstamps.com\"
+        target=\"_blank\">web gallery</a>.</p>\n    </div>\n  </div>\n  <div>\n      </div>\n</div>\n
+        \ </div>\n\n  \n  </div>\n      </div>\n      <div class=\"grid_1\">\n        <div
+        class=\"panel-pane pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n
+        \   <div id=\"node-5645\" class=\"node node-component clearfix\" about=\"/node/5645\"
+        typeof=\"sioc:Item foaf:Document\">\n  <div class=\"padding_34_0_7_0 title
+        \">\n    <h2><a href=\"/investor-centre/report-download-centre\" class=\"chevron-large
+        text-color-dark-grey\">Results and reports</a></h2>\n  </div>\n  <div class=\"color-new-grey\">\n
+        \   <div class=\"borderb-solid-new-grey\">\n      <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/HWDC520.jpg?itok=9IKq7A6P\"
+        width=\"220\" height=\"147\" alt=\"\" />    </div>\n    <div class=\"border-dotted-light-grey
+        padding10\">\n      <p><a href=\"/investor-centre/report-download-centre\">View and
+        download</a> all our latest financial results, reports, slides and webcasts.</p>\n
+        \   </div>\n  </div>\n  <div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n<div
+        class=\"panel-separator\"></div><div class=\"panel-pane pane-node\" >\n  \n
+        \     \n  \n  <div class=\"pane-content\">\n    <div id=\"node-5286\" class=\"node
+        node-component clearfix\" about=\"/node/5286\" typeof=\"sioc:Item foaf:Document\">\n
+        \ <div class=\"padding_34_0_7_0 title \">\n    <h2><a href=\"http://www.royalmailgroup.com/about-us/heritage/first-world-war\"
+        class=\"chevron-large text-color-dark-grey\">First World War</a></h2>\n  </div>\n
+        \ <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/The
+        Post Office Rifles on parade.jpg?itok=q4mlIss1\" width=\"220\" height=\"147\"
+        alt=\"The Post Office Rifles on parade\" />    </div>\n    <div class=\"border-dotted-light-grey
+        padding10\">\n      <p>Royal Mail played a significant role in the First World
+        War as part of the General Post Office. <a href=\"/about-us/heritage/first-world-war\">Read
+        more</a>. </p>\n    </div>\n  </div>\n  <div>\n      </div>\n</div>\n  </div>\n\n
+        \ \n  </div>\n      </div>\n      <div class=\"grid_1\">\n        <div class=\"panel-pane
+        pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-4397\"
+        class=\"node node-component clearfix\" about=\"/node/4397\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"padding_34_0_7_0 title \">\n    <h2><a href=\"/our-people\"
+        class=\"chevron-large text-color-dark-grey\">Careers</a></h2>\n  </div>\n
+        \ <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/Careers_grad_ourprogs_220x147.jpg?itok=AGOOptSX\"
+        width=\"220\" height=\"147\" alt=\"three people chatting\" />    </div>\n
+        \   <div class=\"border-dotted-light-grey padding10\">\n      <p>Be at the
+        forefront of our ambition to be the best delivery company across Europe. <a
+        href=\"https://jobs.royalmailgroup.com/\">Search jobs. </a></p>\n    </div>\n
+        \ </div>\n  <div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n
+        \   <div id=\"node-525\" class=\"node node-component clearfix\" about=\"/node/525\"
+        typeof=\"sioc:Item foaf:Document\">\n  <div class=\"padding_34_0_7_0 title
+        \">\n    <h2><a href=\"http://www.royalmailgroup.com/responsibility/cr-reports\"
+        class=\"chevron-large text-color-dark-grey\">CR Report</a></h2>\n  </div>\n
+        \ <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/1265_Deliver_to_neighbour_2_300dpi_CMYK_a6.jpeg?itok=EibvGI43\"
+        width=\"220\" height=\"147\" alt=\"Postwoman delivering\" />    </div>\n    <div
+        class=\"border-dotted-light-grey padding10\">\n      <p>Our corporate responsibility
+        activity benefits the business as well as society and the environment.</p>\n
+        \   </div>\n  </div>\n  <div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n
+        \     </div>\n      <div class=\"grid_1\">\n        <div class=\"panel-pane
+        pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-3350\"
+        class=\"node node-component clearfix\" about=\"/node/3350\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"padding_34_0_7_0 title \">\n    <h2><a href=\"/customers/our-customers-customer-support\"
+        class=\"chevron-large text-color-dark-grey\"> Customer support</a></h2>\n
+        \ </div>\n  <div class=\"color-new-grey\">\n    <div class=\"borderb-solid-new-grey\">\n
+        \     <img src=\"//www.royalmailgroup.com/sites/default/files/styles/grid_1/public/call_centre_1.jpg?itok=JkrQDI7V\"
+        width=\"220\" height=\"147\" alt=\"\" />    </div>\n    <div class=\"border-dotted-light-grey
+        padding10\">\n      <p>Call us on 03457 740 740. For general questions visit
+        the <a href=\"/contactus\">contact us page.</a></p>\n    </div>\n  </div>\n
+        \ <div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n<div class=\"panel-separator\"></div><div
+        class=\"panel-pane pane-views pane-tweets-rmg\" >\n  \n  <div class=\"padding_34_0_7_0\">
+        \     <h2 class=\"pane-title\"><a class=\"chevron-large text-color-dark-grey\"
+        href=\"https://twitter.com/royalmailnews\">Latest tweets</a></h2>\n    </div>\n
+        \ \n  <div class=\"pane-content\">\n    <div class=\"view view-tweets-rmg
+        view-id-tweets_rmg view-display-id-default scroll-pane view-dom-id-37e66cc5c6bdef76bee3600196858562\">\n
+        \       \n  \n  \n      <div class=\"view-content\">\n      <div class=\"inbound-xml-feed-content
+        scroll-pane\">    <ul class=\"border-bot\">          <li class=\"views-row
+        views-row-1 views-row-odd views-row-first\">  \n  <div class=\"views-field
+        views-field-text\">        <span class=\"field-content\">RT <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://twitter.com/StrokeAssocNW\">@StrokeAssocNW</a>:
+        Wow! <a target=\"_blank\" rel=\"nofollow\" href=\"http://twitter.com/RoyalMailNews\">@RoyalMailNews</a>
+        postwoman Carol has completed her 30,000ft challenge for <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://twitter.com/TheStrokeAssoc\">@TheStrokeAssoc</a>!
+        <a target=\"_blank\" rel=\"nofollow\" href=\"http://t.co/FS3oPegX3m\">http://t.co/FS3oPegX3m</a>
+        htt…</span>  </div>  \n  <div class=\"views-field views-field-created-time\">
+        \       <span class=\"field-content color-grey-darker\"><em class=\"placeholder\">1
+        hour 5 min</em> ago</span>  </div></li>\n          <li class=\"views-row views-row-2
+        views-row-even\">  \n  <div class=\"views-field views-field-text\">        <span
+        class=\"field-content\">We're working with <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://twitter.com/HistoricEngland\">@HistoricEngland</a> to preserve
+        the character &amp; heritage of post boxes - <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://t.co/cuRwlbuIYG\">http://t.co/cuRwlbuIYG</a> <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://t.co/MocN5VNd3h\">http://t.co/MocN5VNd3h</a></span>
+        \ </div>  \n  <div class=\"views-field views-field-created-time\">        <span
+        class=\"field-content color-grey-darker\"><em class=\"placeholder\">1 hour
+        35 min</em> ago</span>  </div></li>\n          <li class=\"views-row views-row-3
+        views-row-odd\">  \n  <div class=\"views-field views-field-text\">        <span
+        class=\"field-content\">We've issued new stamps to mark 75th anniversary of
+        the Battle of Britain, more info here - <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://t.co/q8ME6HOjFr\">http://t.co/q8ME6HOjFr</a> <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://t.co/0Z8xHaGgeV\">http://t.co/0Z8xHaGgeV</a></span>
+        \ </div>  \n  <div class=\"views-field views-field-created-time\">        <span
+        class=\"field-content color-grey-darker\"><em class=\"placeholder\">2 days
+        4 hours</em> ago</span>  </div></li>\n          <li class=\"views-row views-row-4
+        views-row-even\">  \n  <div class=\"views-field views-field-text\">        <span
+        class=\"field-content\">Thanks to <a target=\"_blank\" rel=\"nofollow\" href=\"http://twitter.com/StewartHosieSNP\">@StewartHosieSNP</a>
+        for revealing our Beano <a target=\"_blank\" rel=\"nofollow\" href=\"http://search.twitter.com/search?q=%23yearofthestamp\">#yearofthestamp</a>
+        plaque in Dundee's City Square today. <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://t.co/molWtqmpQU\">http://t.co/molWtqmpQU</a></span>  </div>
+        \ \n  <div class=\"views-field views-field-created-time\">        <span class=\"field-content
+        color-grey-darker\"><em class=\"placeholder\">4 days 23 hours</em> ago</span>
+        \ </div></li>\n          <li class=\"views-row views-row-5 views-row-odd\">
+        \ \n  <div class=\"views-field views-field-text\">        <span class=\"field-content\">RT
+        <a target=\"_blank\" rel=\"nofollow\" href=\"http://twitter.com/RoyalMailStamps\">@RoyalMailStamps</a>:
+        Issued 25 years ago - our tribute to Thomas Hardy. Explore this &amp; 1000s
+        of other UK stamps at <a target=\"_blank\" rel=\"nofollow\" href=\"http://t.co/ofCE5r5VUa\">http://t.co/ofCE5r5VUa</a>
+        h…</span>  </div>  \n  <div class=\"views-field views-field-created-time\">
+        \       <span class=\"field-content color-grey-darker\"><em class=\"placeholder\">5
+        days 1 hour</em> ago</span>  </div></li>\n          <li class=\"views-row
+        views-row-6 views-row-even\">  \n  <div class=\"views-field views-field-text\">
+        \       <span class=\"field-content\">RT <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://twitter.com/missingpeople\">@missingpeople</a>: <a target=\"_blank\"
+        rel=\"nofollow\" href=\"mailto:.@RoyalMail\">.@RoyalMail</a>'s alerts for
+        <a target=\"_blank\" rel=\"nofollow\" href=\"http://twitter.com/missingpeople\">@missingpeople</a>
+        are a lifeline so we're thrilled to be shortlisted for a <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://twitter.com/charitytimes\">@charitytimes</a>
+        community…</span>  </div>  \n  <div class=\"views-field views-field-created-time\">
+        \       <span class=\"field-content color-grey-darker\"><em class=\"placeholder\">1
+        week 2 min</em> ago</span>  </div></li>\n          <li class=\"views-row views-row-7
+        views-row-odd\">  \n  <div class=\"views-field views-field-text\">        <span
+        class=\"field-content\"><a target=\"_blank\" rel=\"nofollow\" href=\"mailto:.@CamSatchelCo\">.@CamSatchelCo</a>
+        joins Royal Mail’s Tmall Global shop front <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://t.co/VD7ltPxLyL\">http://t.co/VD7ltPxLyL</a></span>  </div>
+        \ \n  <div class=\"views-field views-field-created-time\">        <span class=\"field-content
+        color-grey-darker\"><em class=\"placeholder\">1 week 2 hours</em> ago</span>
+        \ </div></li>\n          <li class=\"views-row views-row-8 views-row-even\">
+        \ \n  <div class=\"views-field views-field-text\">        <span class=\"field-content\"><a
+        target=\"_blank\" rel=\"nofollow\" href=\"mailto:.@JasonMcCartney\">.@JasonMcCartney</a>
+        <a target=\"_blank\" rel=\"nofollow\" href=\"http://twitter.com/CWUnews\">@CWUnews</a>
+        Thanks Jason, it's great to have your support to reduce the 7 dog attacks
+        in Colne Valley.</span>  </div>  \n  <div class=\"views-field views-field-created-time\">
+        \       <span class=\"field-content color-grey-darker\"><em class=\"placeholder\">1
+        week 2 hours</em> ago</span>  </div></li>\n          <li class=\"views-row
+        views-row-9 views-row-odd\">  \n  <div class=\"views-field views-field-text\">
+        \       <span class=\"field-content\">RT <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://twitter.com/JasonMcCartney\">@JasonMcCartney</a>: I'm supporting
+        the <a target=\"_blank\" rel=\"nofollow\" href=\"http://search.twitter.com/search?q=%23dogaware\">#dogaware</a>
+        campaign protecting posties from dog attacks <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://twitter.com/royalmailnews\">@royalmailnews</a> <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://twitter.com/cwunews\">@cwunews</a> <a target=\"_blank\"
+        rel=\"nofollow\" href=\"http://t.co/zxzkudt5IC\">http://t.co/zxzkudt5IC</a></span>
+        \ </div>  \n  <div class=\"views-field views-field-created-time\">        <span
+        class=\"field-content color-grey-darker\"><em class=\"placeholder\">1 week
+        2 hours</em> ago</span>  </div></li>\n          <li class=\"views-row views-row-10
+        views-row-even views-row-last\">  \n  <div class=\"views-field views-field-text\">
+        \       <span class=\"field-content\">RT <a target=\"_blank\" rel=\"nofollow\"
+        href=\"http://twitter.com/RoyalMailStamps\">@RoyalMailStamps</a>: Today marks
+        96 years since the birth of Dr Who actor Jon Pertwee. See him in our framed
+        stamps <a target=\"_blank\" rel=\"nofollow\" href=\"http://t.co/sZLvbpJAci\">http://t.co/sZLvbpJAci</a>
+        …</span>  </div>  \n  <div class=\"views-field views-field-created-time\">
+        \       <span class=\"field-content color-grey-darker\"><em class=\"placeholder\">1
+        week 21 hours</em> ago</span>  </div></li>\n      </ul></div>    </div>\n
+        \ \n  \n  \n  \n  \n  \n</div>  </div>\n\n  \n  \n  </div>\n      </div>\n
+        \     <div class=\"clear\"></div>\n    </div>\n  </div>\n  <div class=\"color-white\">\n
+        \   <div class=\"container_4\">\n      <div class=\"grid_1\">\n        <div
+        class=\"panel-pane pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n
+        \   <div id=\"node-320\" class=\"node node-component clearfix\" about=\"/how-were-regulated\"
+        typeof=\"sioc:Item foaf:Document\">\n  <div class=\"color-white\">\n    <div
+        class=\" padding_34_0_7_0\">\n      <h2><a href=\"/regulation\" class=\"chevron-large
+        text-color-dark-grey\">Regulation</a></h2>\n    </div>\n    <div class=\"border-dotted-light-grey
+        padding_10_0_10_0\">\n            <p>As the Universal Service provider, we
+        are regulated against a number of conditions by Ofcom.</p>\n      <div class=\"clear\"></div>\n
+        \   </div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n      </div>\n
+        \     <div class=\"grid_1\">\n        <div class=\"panel-pane pane-node\"
+        >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-536\"
+        class=\"node node-component clearfix\" about=\"/node/536\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"color-white\">\n    <div class=\" padding_34_0_7_0\">\n
+        \     <h2><a href=\"/financial-and-media\" class=\"chevron-large text-color-dark-grey\">Media</a></h2>\n
+        \   </div>\n    <div class=\"border-dotted-light-grey padding_10_0_10_0\">\n
+        \           <p>Our Press Office offers a 24 hour service to journalists, contact +44(0)2033381007,<br
+        />\n\tor <a href=\"mailto:press.office@royalmail.com\">press.office@royalmail.com</a></p>\n
+        \     <div class=\"clear\"></div>\n    </div>\n      </div>\n</div>\n  </div>\n\n
+        \ \n  </div>\n      </div>\n      <div class=\"grid_1\">\n        <div class=\"panel-pane
+        pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-322\"
+        class=\"node node-component clearfix\" about=\"/heritage-0\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"color-white\">\n    <div class=\" padding_34_0_7_0\">\n
+        \     <h2><a href=\"/about-us/heritage\" class=\"chevron-large text-color-dark-grey\">Heritage</a></h2>\n
+        \   </div>\n    <div class=\"border-dotted-light-grey padding_10_0_10_0\">\n
+        \           <p>We have a unique heritage, and are proud of our 500 years of
+        public service. Read more about our history <a href=\"/about-us/heritage\">here</a>.</p>\n
+        \     <div class=\"clear\"></div>\n    </div>\n      </div>\n</div>\n  </div>\n\n
+        \ \n  </div>\n      </div>\n      <div class=\"grid_1\">\n        <div class=\"panel-pane
+        pane-node\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <div id=\"node-316\"
+        class=\"node node-component clearfix\" about=\"/node/316\" typeof=\"sioc:Item
+        foaf:Document\">\n  <div class=\"color-white\">\n    <div class=\" padding_34_0_7_0\">\n
+        \     <h2><a href=\"/socialmedia\" class=\"chevron-large text-color-dark-grey\">Connect</a></h2>\n
+        \   </div>\n    <div class=\"border-dotted-light-grey padding_10_0_10_0\">\n
+        \           <p>Follow our social channels to be updated on news and services
+        and join the conversation about Royal Mail.</p>\n      <div class=\"clear\"></div>\n
+        \   </div>\n      </div>\n</div>\n  </div>\n\n  \n  </div>\n      </div>\n
+        \     <div class=\"clear\"></div>\n    </div>\n    <div class=\"container_4\">\n
+        \     <div class=\"grid_2_5\">\n        <div class=\"panel-pane pane-block
+        pane-block-2\" >\n  \n      \n  \n  <div class=\"pane-content\">\n    <h2>\n\t </h2>\n<div
+        class=\"padding_21_0_10_0\">\n<ul class=\"business-promo\"><li>\n\t\t\t<a
+        class=\"tooltip\" href=\"http://www.royalmail.com\" original-title=\"Royal
+        Mail delivers letters and parcels, six days a week, to 29 million addresses
+        across the UK.\"><img alt=\"Royal Mail\" class=\"padding_0_50_0_0\" height=\"58\"
+        src=\"/sites/all/themes/rmgd7/img/logos/royal-mail.png\" width=\"85\" /></a></li>\n<li>\n\t\t\t<a
+        class=\"tooltip\" href=\"http://www.parcelforce.com\" original-title=\"Parcelforce
+        has approximately 4,500 employees and operates across a network of 52 depots
+        throughout the UK.\"><img alt=\"Parcel Force Worldwide\" class=\"padding_6_36_0_0\"
+        height=\"46\" src=\"/sites/all/themes/rmgd7/img/logos/parcel-force-worldwide.jpg\"
+        width=\"117\" /></a></li>\n<li>\n\t\t\t<a class=\"tooltip\" href=\"https://gls-group.eu/\"
+        original-title=\"General Logistics Systems (GLS) is one of the largest ground-based
+        parcel delivery service providers in Europe.\"> <img alt=\"GLS\" class=\"padding_6_36_0_0\"
+        height=\"45\" src=\"http://www.royalmailgroup.com/sites/default/files/GLS_Logo_Color_pos_sRGB.png\"
+        width=\"145\" /></a></li>\n</ul></div>\n  </div>\n\n  \n  </div>\n      </div>\n
+        \     <div class=\"grid_1_5\">\n              </div>\n      <div class=\"clear\"></div>\n
+        \   </div>\n        <div class=\"container_4 region-copyright\" role=\"contentinfo\">\n
+        \           <p> </p>\n<div class=\"grid_3\">\n\t </div>\n<p> </p>\n<div class=\"grid_3\">\n\t </div>\n<div
+        class=\"grid_3\">\n<p><strong>Registered Office</strong> Royal Mail plc 100
+        Victoria Embankment London EC4Y 0HQ</p>\n</div>\n<div class=\"grid_1\">\n<div
+        class=\"right\">\n<p><strong>© Royal Mail Group Limited 2015</strong></p>\n</div>\n</div>\n
+        \     <div class=\"clear\"></div>\n    </div>\n      </div>\n</div>  </div>\n</div>\n
+        \ </div>\n    </div>\n  \n  <div class=\"row footer \" role=\"navigation\">\n
+        \     <div class=\"region region-footer\">\n    <dl>\n  <dt>About us</dt>\n
+        \ <dd class=\"first leaf menu-mlid-1764\"><a href=\"http://www.royalmail.com/prices-2014\"
+        target=\"_blank\">Prices 2014</a></dd>\n<dd class=\"last leaf menu-mlid-339\"><a
+        href=\"/financial-and-media-media-centre/finance-media-press-releases\">Latest
+        news</a></dd>\n</dl><dl>\n  <dt>Our website</dt>\n  <dd class=\"first leaf
+        menu-mlid-1276\"><a href=\"/about-us/our-policies/cookies-policy-0\">Cookies
+        policy</a></dd>\n<dd class=\"leaf menu-mlid-341\"><a href=\"/about-us/our-policies/our-privacy-policy\">Privacy
+        policy</a></dd>\n<dd class=\"leaf menu-mlid-1274\"><a href=\"/about-us/our-policies/accessibility\">Accessibility</a></dd>\n<dd
+        class=\"leaf menu-mlid-1730\"><a href=\"/about-us/our-policies/terms-and-conditions\"
+        mini_panel_alignment=\"left\" title=\"Terms and conditions\">Terms and conditions</a></dd>\n<dd
+        class=\"leaf menu-mlid-1259\"><a href=\"/sitemap\">Sitemap</a></dd>\n<dd class=\"last
+        leaf has-children menu-mlid-1201\"><a href=\"http://www.royalmailgroup.com/cy\"
+        class=\"menu_icon menu-1201\" lang=\"cy\" hreflang=\"cy\">Cymraeg</a></dd>\n</dl><dl>\n
+        \ <dt>Group sites</dt>\n  <dd class=\"first leaf menu-mlid-335\"><a href=\"http://www.royalmail.com/\"
+        target=\"_blank\">Royal Mail</a></dd>\n<dd class=\"leaf menu-mlid-336\"><a
+        href=\"http://www.parcelforce.com/?1\" target=\"_blank\">Parcelforce Worldwide</a></dd>\n<dd
+        class=\"leaf menu-mlid-345\"><a href=\"http://www.gls-group.eu\" target=\"_blank\">GLS</a></dd>\n<dd
+        class=\"last leaf menu-mlid-1765\"><a href=\"http://www.royalmail.com/marketing-services-regular/marketreach\"
+        target=\"_blank\">MarketReach</a></dd>\n</dl><dl>\n  <dt>Contact us</dt>\n
+        \ <dd class=\"first leaf menu-mlid-332\"><a href=\"http://www.royalmail.com/customer-service/contact-us\"
+        target=\"_blank\">at Royal Mail</a></dd>\n<dd class=\"leaf menu-mlid-344\"><a
+        href=\"http://www.parcelforce.com/home/contact-us\" target=\"_blank\">at Parcelforce
+        Worldwide</a></dd>\n<dd class=\"last leaf menu-mlid-1773\"><a href=\"https://twitter.com/royalmailnews\"
+        target=\"_blank\">Royal Mail Group on Twitter</a></dd>\n</dl><ul class=\"menu-keep-me-posted\"><li
+        class=\"first last leaf menu-mlid-2281\"><a href=\"http://www.keepmeposteduk.com/\"
+        mini_panel_alignment=\"centre\" class=\"social-keep-me-posted no-icon\" target=\"_blank\"><img
+        src=\"/sites/all/themes/rmgd7/img/components/social-media/kmp_logo_1500x930_portrait.png\"
+        alt=\"Keep me posted\" /></a></li>\n</ul><div class=\"block-social-media\">\n
+        \ <ul class=\"menu-social-media\"><li class=\"first leaf menu-mlid-2284\"><a
+        href=\"http://www.linkedin.com/company/5263?trk=tyah\" mini_panel=\"media\"
+        mini_panel_alignment=\"centre\" class=\"social-linkedin no-icon\" target=\"_blank\"><span>LinkedIn</span></a></li>\n<li
+        class=\"leaf menu-mlid-2282\"><a href=\"http://www.facebook.com/RoyalMailStamps\"
+        mini_panel_alignment=\"centre\" class=\"social-facebook no-icon\" target=\"_blank\"><span>Facebook</span></a></li>\n<li
+        class=\"last leaf menu-mlid-2283\"><a href=\"http://www.twitter.com/royalmail\"
+        mini_panel_alignment=\"centre\" class=\"social-twitter no-icon\" target=\"_blank\"><span>Twitter</span></a></li>\n</ul></div>
+        \ </div>\n    <div class=\"clear\"></div>\n  </div>\n  </div>\n    <div class=\"region
+        region-page-bottom\">\n      <!-- SiteCatalyst code version: H.24.4 Copyright
+        1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->\n
+        \ <script type=\"text/javascript\" language=\"JavaScript\" src=\"/sites/all/modules/custom/rmg_omniture/js/omniture-h.js\"></script>\n\n<script
+        type=\"text/javascript\" language=\"JavaScript\">//<![CDATA[\n  \n          s.cookieDomainPeriods
+        = \"2\";\n    s.linkInternalFilters = \"javascript:,royalmailgroup.com\";\n
+        \   s.prop14 = \"\";\n    s.prop15 = \"\";\n    s.prop16 = \"\";\n    s.prop17
+        = \"\";\n    s.campaign = \"\";\n    s.eVar16 = \"\";\n    s.prop9 = \"\";\n
+        \   s.eVar1 = \"\";\n    s.pageName = \"RMG Home 166\";\n    s.prop11 = \"Home\";\n
+        \   s.prop12 = \"\";\n    s.prop13 = \"\";\n    s.prop18 = \"\";\n    s.prop7
+        = \"Home\";\n    s.prop8 = \"Home\";\n  /************* DO NOT ALTER ANYTHING
+        BELOW THIS LINE ! **************/\ns.t();//]]></script>\n\n  <!-- End SiteCatalyst
+        code version: H.24.4 -->\n  </div>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 15 Jul 2015 13:28:44 GMT
+recorded_with: VCR 2.9.3
