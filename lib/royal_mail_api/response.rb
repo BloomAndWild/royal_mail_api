@@ -26,6 +26,10 @@ module RoyalMailApi
       @warnings ||= []
     end
 
+    def shipments
+      @shipments ||= []
+    end
+
     private
 
     def set_attrs(response)
