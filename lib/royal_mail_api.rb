@@ -1,3 +1,9 @@
+require 'openssl'
+require 'base64'
+require 'savon'
+require 'digest/sha1'
+require "active_support/core_ext/string"
+
 require "royal_mail_api/version"
 require 'royal_mail_api/hash_methods'
 require 'royal_mail_api/config'
@@ -8,13 +14,6 @@ require 'royal_mail_api/response'
 require 'royal_mail_api/client'
 require 'royal_mail_api/error'
 require 'royal_mail_api/warning'
-
-require 'openssl'
-require 'base64'
-require 'savon'
-require 'pry'
-require 'digest/sha1'
-require "active_support/core_ext/string"
 
 module RoyalMailApi
   def self.root

@@ -15,7 +15,7 @@ module RoyalMailApi
         # TODO move into own value object
 
         password = config.password
-        creation_date =  Time.now.strftime('%Y-%m-%dT%H:%M:%S')
+        creation_date =  Time.now.utc.strftime('%Y-%m-%dT%H:%M:%S')
         nonce =  rand(999999).to_s
 
         hashedpassword = Digest::SHA1.base64digest(password)
@@ -40,8 +40,8 @@ module RoyalMailApi
           ssl_ca_cert_file: config.ssl_ca_cert_file,
           ssl_cert_file: config.ssl_cert_file,
           ssl_cert_key_file: config.ssl_cert_key_file,
-          :open_timeout => 600,
-          :read_timeout => 600
+          open_timeout: 600,
+          read_timeout: 600
         )
       end
 
