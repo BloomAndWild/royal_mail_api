@@ -33,7 +33,7 @@ module Fixtures
                    "serviceOffering"=>{"serviceOfferingCode"=>{"xmlns"=>"", "code"=>"TRM"}},
                    "serviceFormat"=>{"serviceFormatCode"=>{"xmlns"=>""}},
                    "serviceEnhancements"=>{"enhancementType"=>{"serviceEnhancementCode"=>{"xmlns"=>""}}},
-                   "s§hippingDate"=>"2015-02-09",
+                   "shippingDate"=>"2015-02-09",
                    "recipientContact"=>
                     {"name"=>"Mr Tom Smith",
                      "complementaryName"=>"Department 98",

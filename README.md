@@ -26,10 +26,43 @@ in initializers/royal_mail_api.rb
 
 ```ruby
   RoyalMailApi::Client.configure do |config|
-    config.username = 'your_username'
-    config.passord = 'your_password'
+    config.application_id = 'your Royal Mail application id'
+    config.username = 'your Royal Mail username'
+    config.password = ''your Royal Mail password'
+    config.adapter = library used for http requests (eg. httpclient, excon)
+    config.wsdl = 'path to your wsdl file'
+    config.ssl_ca_cert_file = 'path to your Royal Mail ca cert file'
+    config.ssl_cert_file = 'path to your Royal Mail cert file'
+    config.ssl_cert_key_file = 'path to your Royal Mail key file'
+    config.endpoint = api endpoint for sandbox/production (eg. "https://api.royalmail.com/shipping/onboarding")
   end
+```
 
+### to make a request
+
+```ruby
+  RoyalMailApi::RequestHandler.request(type, attrs)
+```
+
+#### types:
+
+create_shipment
+
+```ruby
+  attrs = {
+    transaction_id: unique identifier, preferably the id of the delivery in your system,
+    shipping_date: format ('%Y-%m-%d'),
+    user_name: '',
+    email: '',
+    address_line1: '',
+    post_town: '',
+    post_code: '',
+    weight: weight of letter/parcel,
+    country_code: addressee's number's country code,
+    telephone_number: ''
+  }
+
+  RoyalMailApi::RequestHandler.request(:create_shipment, attrs)
 ```
 
 ## Development
@@ -45,3 +78,12 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## config adapter
+  To make sure that savon can make the requests you may have to install another library to use as an adapter:
+
+  https://github.com/savonrb/savon/issues/679
+  https://github.com/savonrb/savon/issues/491
+  https://github.com/savonrb/savon/issues/297
+
+  This is a consistent issue, so best to play around. 

@@ -1,23 +1,46 @@
 require 'spec_helper'
 
-class DummyClass
-  extend RoyalMailApi::HashMethods
-end
+describe RoyalMailApi::ResponseHandler do
+  let(:attrs) {
+    {
+      transaction_id: 1,
+      shipping_date: (Time.now+(24*60*60*7)).strftime('%Y-%m-%d'),
+      user_name: 'Mr Tom Smith',
+      email: 'tom.smith@royalmail.com',
+      address_line1: '44-46 Morningside Road',
+      post_town: 'Edinburgh',
+      post_code: 'EH10 4BF',
+      weight: 900
+    }
+  }
 
-describe RoyalMailApi::Response do
-  let(:hash) { Fixtures::ParsedResponses.create_shipment }
-  let(:parsed_response) { DummyClass.symbolize_keys(hash) }
+  around do |spec|
+    configure_client
 
-  it 'creates value objects for shipments' do
-    expect(RoyalMailApi::Response.new(parsed_response: parsed_response).shipments.first).to be_a Struct
+    VCR.use_cassette("response") do
+      @response = RoyalMailApi::RequestHandler.request(:create_shipment, attrs)
+      @response = RoyalMailApi::ResponseHandler.handle_response(@response)
+
+      spec.run
+    end
   end
 
-  it 'sets the correct values for each value object' do
-    shipment = RoyalMailApi::Response.new(parsed_response: parsed_response).shipments[0]
+  it 'returns a response object' do
+    expect(@response.body).to be_a Hash
+    expect(@response.http).to be_a HTTPI::Response
+    expect(@response.shipments).to be_a Array
+    expect(@response.errors).to be_a Array
+    expect(@response.warnings).to be_a Array
+  end
 
-    expect(shipment.item_id).to eq "1000076"
-    expect(shipment.shipment_number).to eq "HY188980152GB"
-    expect(shipment.status_code).to eq "Allocated"
-    expect(shipment.valid_from).to eq "2015-02-09T09:52:06.000+02:00"
+  it 'creates value objects for shipments' do
+    expect(@response.shipments.first).to be_a Struct
+  end
+
+  it 'sets the correct values for each shipment' do
+    shipment = @response.shipments.first
+    expect(shipment.item_id).to_not be_nil
+    expect(shipment.shipment_number).to include 'GB'
+    expect(shipment.valid_from).to_not be_nil
   end
 end

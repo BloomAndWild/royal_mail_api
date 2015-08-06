@@ -9,10 +9,6 @@ module RoyalMailApi
         @config = Config.new
         yield config
       end
-
-      def errors
-        @errors ||= {}
-      end
     end
   end
 end

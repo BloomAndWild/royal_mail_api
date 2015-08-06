@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Srikanth Kunkulagunta"]
   spec.email         = ["srikanth.kunkulagunta@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
+  spec.description   = %q{Write a longer description or delete this line.}
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -27,11 +27,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "savon", "~> 2.10.0"
-  spec.add_dependency "vcr", "~> 2.9"
-  spec.add_dependency "webmock", "~> 1.21.0"
-  spec.add_dependency "activesupport"
+  spec.add_dependency "savon", "~> 2.10"
+  spec.add_dependency "activesupport", "~> 4.1"
+  spec.add_dependency "httpclient", "~> 2.3"
+  spec.add_development_dependency "vcr", "~> 2.9"
+  spec.add_development_dependency "dotenv", "~> 2.0"
+  spec.add_development_dependency "webmock", "~> 1.21"
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry", "~> 0.10"
 end

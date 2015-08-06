@@ -1,5 +1,3 @@
-require "active_support/core_ext/string"
-
 module RoyalMailApi
   module HashMethods
     def symbolize_keys(h)

@@ -19,9 +19,5 @@ describe RoyalMailApi::Client do
     it 'should set the password' do
       expect(config.password).to eq 'foobar'
     end
-
-    it 'should have a base uri' do
-      expect(config.base_uri).to eq 'http://www.royalmailgroup.com'
-    end
   end
 end

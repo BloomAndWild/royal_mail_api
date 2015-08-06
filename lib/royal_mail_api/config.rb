@@ -1,9 +1,14 @@
 module RoyalMailApi
   class Config
-    attr_accessor :username, :password
+    attr_accessor :username,
+      :password,
+      :adapter,
+      :wsdl,
+      :ssl_ca_cert_file,
+      :ssl_cert_file,
+      :ssl_cert_key_file,
+      :endpoint,
+      :application_id
 
-    def base_uri
-      'http://www.royalmailgroup.com'
-    end
   end
 end
