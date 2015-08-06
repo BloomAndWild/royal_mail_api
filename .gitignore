@@ -12,3 +12,4 @@
 /lib/.DS_Store
 /lib/royal_mail_api/.DS_Store
 /spec/support/fixtures/vcr_cassettes
+/royal_mail_api-0.1.0.gem
