@@ -38,58 +38,38 @@ module RoyalMailApi
     end
 
     def set_errors
-      errors = retrieve_value(body, :error)
-
-      if errors.class.name == 'Array'
-        @errors = errors.map do |error|
-          RoyalMailApi::Error.new(error)
-        end
-      elsif errors.class.name == 'Hash'
-        @errors = [RoyalMailApi::Error.new(errors)]
+      return_array_of(:error) do |error|
+        RoyalMailApi::Error.new(error)
       end
     end
 
     def set_warnings
-      warnings = retrieve_value(body, :warning)
-
-      if warnings.class.name == 'Array'
-        @warnings = warnings.map do |warning|
-          RoyalMailApi::Warning.new(warning)
-        end
-      elsif warnings.class.name == 'Hash'
-        @warnings = [RoyalMailApi::Warning.new(warning)]
+      return_array_of(:warning) do |warning|
+        RoyalMailApi::Warning.new(warning)
       end
     end
 
     def set_shipments
-      shipments = retrieve_value(body, :shipment)
-
-      if shipments.class.name == 'Array'
-        @shipments = shipments.map do |s|
-          Shipment.new(
-            retrieve_value(s, :item_id),
-            retrieve_value(s, :shipment_number),
-            retrieve_value(s, :valid_from)
-          )
-        end
-      elsif shipments.class.name == 'Hash'
-        @shipments = [
-          Shipment.new(
-            retrieve_value(shipments, :item_id),
-            retrieve_value(shipments, :shipment_number),
-            retrieve_value(shipments, :valid_from)
-          )
-        ]
-      end
-
-      return [] unless shipments.present? && shipments.class.name == 'Array'
-
-      @shipments = shipments.map do |s|
+      return_array_of(:shipment) do |shipment|
         Shipment.new(
-          retrieve_value(s, :item_id),
-          retrieve_value(s, :shipment_number),
-          retrieve_value(s, :valid_from)
+          retrieve_value(shipment, :item_id),
+          retrieve_value(shipment, :shipment_number),
+          retrieve_value(shipment, :valid_from)
         )
+      end
+    end
+
+    def return_array_of(attr, &block)
+      attrs = retrieve_value(body, attr)
+
+      if attrs.class.name == 'Array'
+        self.send(
+          "#{attr}s=", attrs.map do |attr|
+            yield(attr)
+          end
+        )
+      elsif attrs.class.name == 'Hash'
+        self.send("#{attr}s=", [yield(attrs)])
       end
     end
   end
