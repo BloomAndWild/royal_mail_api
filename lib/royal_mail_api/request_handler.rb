@@ -36,7 +36,7 @@ module RoyalMailApi
           adapter: config.adapter,
           wsdl: config.wsdl,
           endpoint: config.endpoint,
-          namespace: "https://api.royalmail.com/shipping/onboarding",
+          namespace: config.endpoint,
           ssl_ca_cert_file: config.ssl_ca_cert_file,
           ssl_cert_file: config.ssl_cert_file,
           ssl_cert_key_file: config.ssl_cert_key_file,
