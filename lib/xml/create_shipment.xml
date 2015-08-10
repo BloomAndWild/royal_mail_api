@@ -29,6 +29,7 @@
           </serviceOfferingCode>
         </v2:serviceOffering>
         <v2:shippingDate><%= shipping_date %></v2:shippingDate>
+        <v2:safePlace><%= safe_place %></v2:safePlace>
         <v2:recipientContact>
           <v2:name><%= user_name %></v2:name>
           <v2:complementaryName></v2:complementaryName>
@@ -44,6 +45,7 @@
         </v2:recipientContact>
         <v2:recipientAddress>
             <addressLine1><%= address_line1 %></addressLine1>
+            <addressLine2><%= address_line2 %></addressLine2>
             <postTown><%= post_town %></postTown>
             <postcode><%= post_code %></postcode>
             <country>
