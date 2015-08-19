@@ -1,5 +1,3 @@
-require 'pry'
-
 module RoyalMailApi
   class RequestHandler
     class << self
@@ -8,8 +6,8 @@ module RoyalMailApi
           savon.call(request, xml: build_xml(attrs))
         rescue Savon::SOAPFault => e
           RoyalMailApi::SoapError.new({
-            error_code: e.http.code,
-            error_xml: e.xml
+            xml: e.xml,
+            error_code: e.http.code
           })
         end
       end

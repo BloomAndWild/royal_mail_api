@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe RoyalMailApi::RequestHandler do
-  let(:attrs) {
+  let(:base_attrs) {
     {
       transaction_id: 1,
       shipping_date: (Time.now+(24*60*60*7)).strftime('%Y-%m-%d'),
@@ -19,19 +19,33 @@ describe RoyalMailApi::RequestHandler do
   around do |spec|
     configure_client
 
-    VCR.use_cassette("create_shipment") do
+    VCR.use_cassette(default_cassette) do
       @response = RoyalMailApi::RequestHandler.request(:create_shipment, attrs)
       spec.run
     end
   end
 
   describe '#create_shipment' do
+    let(:attrs) { base_attrs }
+    let(:default_cassette) { "create_shipment" }
+
     it 'returns a parsed hash of the xml response' do
       expect(@response.body).to be_a Hash
     end
 
     it 'returns a tracking code for tracked shipments' do
       expect(@response.body).to have_hash_key :shipment_number
+    end
+  end
+
+  describe "parsing Savon::SOAPFault errors" do
+    let(:attrs) { base_attrs.merge({ user_name: 'Bloom & Wild Unit 2.22' }) }
+    let(:default_cassette) { "Savon::SOAPFault" }
+
+    it "raises a RoyalMailApi::SoapError" do
+      expect(@response).to be_a RoyalMailApi::SoapError
+      expect(@response.description).to eq "env:Client error: The message was incorrectly formed or contained incorrect information."
+      expect(@response.code).to eq 500
     end
   end
 end

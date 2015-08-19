@@ -5,7 +5,8 @@ module RoyalMailApi
         xml = Nokogiri::XML(xml).remove_namespaces!
       end
 
-      xml.xpath(attr)
+      # xpath method doesn't work for finding SOAP Fault attributes for some reason
+      xml.css(attr)
     end
 
     def parse_all(xml, attr)
