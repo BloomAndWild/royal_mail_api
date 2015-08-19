@@ -26,7 +26,7 @@ describe RoyalMailApi::ResponseHandler do
   end
 
   it 'returns a response object' do
-    expect(@response.body).to be_a Hash
+    expect(@response.body).to be_a String
     expect(@response.http).to be_a HTTPI::Response
     expect(@response.shipments).to be_a Array
     expect(@response.errors).to be_a Array

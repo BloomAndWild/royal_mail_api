@@ -6,6 +6,7 @@ class XmlBuilder
   def initialize(request, attrs={})
     @request = request
 
+    # TODO change to avoid multi-thread mayhem
     attrs.each do |k,v|
       self.class.send(:attr_accessor, k)
       instance_variable_set(:"@#{k}", v)
