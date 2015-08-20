@@ -44,7 +44,7 @@
         </v2:recipientContact>
         <v2:recipientAddress>
             <addressLine1><%= address_line1 %></addressLine1>
-            <addressLine2><%= address_line2 %></addressLine2>
+            <addressLine2><%= try(:address_line2) %></addressLine2>
             <postTown><%= post_town %></postTown>
             <postcode><%= post_code %></postcode>
             <country>
@@ -68,7 +68,7 @@
         </v2:items>
         <v2:customerReference>CustSuppRef1</v2:customerReference>
         <v2:senderReference>SenderReference1</v2:senderReference>
-        <v2:safePlace><%= safe_place %></v2:safePlace>
+        <v2:safePlace><%= try(:safe_place) %></v2:safePlace>
       </v2:requestedShipment>
   </v2:createShipmentRequest>
 </soapenv:Body>

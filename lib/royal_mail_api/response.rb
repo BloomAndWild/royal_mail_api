@@ -1,9 +1,8 @@
 module RoyalMailApi
   class Response
-    include HashMethods
-
     attr_accessor :body,
       :http,
+      :parser,
       :errors,
       :warnings,
       :shipments
@@ -15,25 +14,26 @@ module RoyalMailApi
     )
 
     def initialize(response)
+      @parser = RoyalMailApi::XmlParser.new
       set_attrs(response)
-    end
-
-    def errors
-      @errors ||= []
-    end
-
-    def warnings
-      @warnings ||= []
-    end
-
-    def shipments
-      @shipments ||= []
     end
 
     private
 
+    def parse(xml, attr)
+      parser.parse(xml, attr)
+    end
+
+    def parse_all(xml, attr)
+      parser.parse_all(xml, attr)
+    end
+
+    def parse_text(xml, attr)
+      parser.parse_text(xml, attr)
+    end
+
     def set_attrs(response)
-      @body = response.body
+      @body = response.xml
       @http = response.http
 
       set_errors
@@ -42,38 +42,30 @@ module RoyalMailApi
     end
 
     def set_errors
-      return_array_of(:error) do |error|
-        RoyalMailApi::Error.new(error)
+      @errors = parse_all(body, "error").map do |error|
+        RoyalMailApi::RoyalMailError.new({
+          error_code:         parse_text(error, "errorCode"),
+          error_description:  parse_text(error, "errorDescription")
+        })
       end
     end
 
     def set_warnings
-      return_array_of(:warning) do |warning|
-        RoyalMailApi::Warning.new(warning)
+      @warnings = parse_all(body, "warning").map do |warning|
+        RoyalMailApi::Warning.new({
+          warning_code:         parse_text(warning, "warningCode"),
+          warning_description:  parse_text(warning, "warningDescription")
+        })
       end
     end
 
     def set_shipments
-      return_array_of(:shipment) do |shipment|
+      @shipments = parse_all(body, "shipment").map do |shipment|
         Shipment.new(
-          retrieve_value(shipment, :item_id),
-          retrieve_value(shipment, :shipment_number),
-          retrieve_value(shipment, :valid_from)
+          parse_text(shipment, "itemId"),
+          parse_text(shipment, "shipmentNumber"),
+          parse_text(shipment, "validFrom")
         )
-      end
-    end
-
-    def return_array_of(attr, &block)
-      attrs = retrieve_value(body, attr)
-
-      if attrs.class.name == 'Array'
-        self.send(
-          "#{attr}s=", attrs.map do |attr|
-            yield(attr)
-          end
-        )
-      elsif attrs.class.name == 'Hash'
-        self.send("#{attr}s=", [yield(attrs)])
       end
     end
   end

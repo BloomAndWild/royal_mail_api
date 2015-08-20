@@ -2,7 +2,14 @@ module RoyalMailApi
   class RequestHandler
     class << self
       def request(request, attrs={})
-        savon.call(request, xml: build_xml(attrs))
+        begin
+          savon.call(request, xml: build_xml(attrs))
+        rescue Savon::SOAPFault => e
+          raise RoyalMailApi::SoapError.new({
+            xml: e.xml,
+            error_code: e.http.code
+          })
+        end
       end
 
       private
