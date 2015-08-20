@@ -5,7 +5,7 @@ module RoyalMailApi
         begin
           savon.call(request, xml: build_xml(attrs))
         rescue Savon::SOAPFault => e
-          RoyalMailApi::SoapError.new({
+          raise RoyalMailApi::SoapError.new({
             xml: e.xml,
             error_code: e.http.code
           })

@@ -3,13 +3,21 @@ require 'erb'
 class XmlBuilder
   attr_reader :request
 
+  SPECIAL_CHARACTER_MAP = {
+    '"' => "&quot;",
+    "&" => "&amp;",
+    "'" => "&apos;",
+    "<" => "&lt;",
+    ">" => "&gt;"
+  }
+
   def initialize(request, attrs={})
     @request = request
 
     # TODO change to avoid multi-thread mayhem
     attrs.each do |k,v|
       self.class.send(:attr_accessor, k)
-      instance_variable_set(:"@#{k}", v)
+      instance_variable_set(:"@#{k}", parse_special_characters(v))
     end
   end
 
@@ -42,5 +50,10 @@ class XmlBuilder
 
   def create_shipment
     return build_xml('create_shipment.xml')
+  end
+
+  def parse_special_characters(str)
+    return str unless str.is_a? String
+    str.gsub(/["&'<>]/, SPECIAL_CHARACTER_MAP)
   end
 end
