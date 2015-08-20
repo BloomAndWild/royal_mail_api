@@ -53,7 +53,9 @@ module RoyalMailApi
     end
 
     def set_description
-      @description = "#{faultcode} error: #{SOAP_FAULT_DESCRIPTIONS[faultcode]}"
+      desc = SOAP_FAULT_DESCRIPTIONS[faultcode] || "sorry, no further information available"
+
+      @description = "#{faultcode} error: #{desc}"
     end
   end
 end
