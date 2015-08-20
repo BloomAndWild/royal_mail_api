@@ -4,7 +4,7 @@ describe 'Warnings' do
   let(:attrs) {
     {
       transaction_id: 1,
-      shipping_date: (Time.now+(24*60*60*7)).strftime('%Y-%m-%d'),
+      shipping_date: (Date.today + 7).to_s,
       user_name: 'Mr Tom Smith',
       email: 'tom.smith@royalmail.com',
       address_line1: '44-46 Morningside Road',

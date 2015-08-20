@@ -28,7 +28,7 @@ describe 'Errors' do
           parsed_response = RoyalMailApi::ResponseHandler.handle_response(response)
           expect(parsed_response.errors.count).to eq 1
           expect(parsed_response.errors.first.description).to_not be nil
-          expect(parsed_response.errors.first.description).to_not be_empty
+          expect(parsed_response.errors.first.description).to be_present
         end
       end
     end
