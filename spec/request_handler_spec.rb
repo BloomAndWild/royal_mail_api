@@ -60,11 +60,9 @@ describe RoyalMailApi::RequestHandler do
       configure_client
 
       VCR.use_cassette("Savon::SOAPFault") do
-        @response = RoyalMailApi::RequestHandler.request(:create_shipment, attrs)
-
-        expect(@response).to be_a RoyalMailApi::SoapError
-        expect(@response.description).to eq "env:Client error: The message was incorrectly formed or contained incorrect information."
-        expect(@response.code).to eq 500
+        expect{ RoyalMailApi::RequestHandler.request(:create_shipment, attrs) }.to raise_error RoyalMailApi::SoapError
+        # expect(@response.description).to eq "env:Client error: The message was incorrectly formed or contained incorrect information."
+        # expect(@response.code).to eq 500
       end
     end
   end
