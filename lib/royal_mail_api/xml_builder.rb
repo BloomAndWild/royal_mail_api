@@ -1,6 +1,7 @@
 require 'erb'
+require 'ostruct'
 
-class XmlBuilder
+class XmlBuilder < OpenStruct
   attr_reader :request
 
   SPECIAL_CHARACTER_MAP = {
@@ -13,16 +14,11 @@ class XmlBuilder
 
   def initialize(request, attrs={})
     @request = request
-
-    # TODO change to avoid multi-thread mayhem
-    attrs.each do |k,v|
-      self.class.send(:attr_accessor, k)
-      instance_variable_set(:"@#{k}", parse_special_characters(v))
-    end
+    super attrs
   end
 
   def build
-    return envelope
+    envelope
   end
 
   private
@@ -33,23 +29,19 @@ class XmlBuilder
 
   def build_xml(file)
     path = File.join(xml_path << file)
-    return ERB.new(File.read(path)).result(binding)
+    ERB.new(File.read(path)).result(binding)
   end
 
   def header
-    return build_xml('security_header.xml')
+    build_xml('security_header.xml')
   end
 
   def body
-    return self.send(request)
+    build_xml("#{request}.xml")
   end
 
   def envelope
-    return build_xml('envelope.xml')
-  end
-
-  def create_shipment
-    return build_xml('create_shipment.xml')
+    build_xml('envelope.xml')
   end
 
   def parse_special_characters(str)
