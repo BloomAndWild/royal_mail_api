@@ -14,6 +14,11 @@ class XmlBuilder < OpenStruct
 
   def initialize(request, attrs={})
     @request = request
+
+    attrs = attrs.reduce({}) do |hash,(k,v)|
+      hash[k]=parse_special_characters(v); hash
+    end
+
     super attrs
   end
 

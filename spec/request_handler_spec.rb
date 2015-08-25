@@ -40,7 +40,7 @@ describe RoyalMailApi::RequestHandler do
     end
 
     describe "with special characters" do
-      let(:attrs) { base_attrs }
+      let(:attrs) {base_attrs.merge({ user_name: 'Bloom & Wild Unit 2.22' }) }
       let(:default_cassette) { "special_characters" }
 
       it "are converted to xml entity references" do
@@ -50,7 +50,7 @@ describe RoyalMailApi::RequestHandler do
   end
 
   describe "parsing Savon::SOAPFault errors" do
-    let(:attrs) { base_attrs.merge({user_name: 'Bloom & Wild Unit 2.22'}) }
+    let(:attrs) { base_attrs.merge({ user_name: 'Bloom & Wild Unit 2.22' }) }
 
     before do
       stub_const("XmlBuilder::SPECIAL_CHARACTER_MAP", {'&' => '&'})
