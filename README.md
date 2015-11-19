@@ -35,6 +35,7 @@ in initializers/royal_mail_api.rb
     config.ssl_cert_file = 'path to your Royal Mail cert file'
     config.ssl_cert_key_file = 'path to your Royal Mail key file'
     config.endpoint = api endpoint for sandbox/production (eg. "https://api.royalmail.com/shipping/onboarding")
+    config.logger = Logger.new(STDOUT)
   end
 ```
 

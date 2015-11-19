@@ -8,7 +8,8 @@ module RoyalMailApi
       :ssl_cert_file,
       :ssl_cert_key_file,
       :endpoint,
-      :application_id
+      :application_id,
+      :logger
 
   end
 end
