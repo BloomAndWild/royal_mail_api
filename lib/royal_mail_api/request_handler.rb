@@ -3,8 +3,12 @@ module RoyalMailApi
     class << self
       def request(request, attrs={})
         begin
-          savon.call(request, xml: build_xml(attrs))
+          xml = build_xml(attrs)
+          config.logger.info("CREATE SHIPMENT REQUEST: #{xml}")
+          savon.call(request, xml: xml)
         rescue Savon::SOAPFault => e
+          config.logger.error("CREATE SHIPMENT ERROR #{e.http.code}")
+          config.logger.error("ERROR XML: #{e.xml}")
           raise RoyalMailApi::SoapError.new({
             xml: e.xml,
             error_code: e.http.code
