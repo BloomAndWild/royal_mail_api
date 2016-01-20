@@ -14,3 +14,4 @@
 /spec/support/fixtures/.DS_Store
 /spec/support/fixtures/vcr_cassettes
 /*.gem
+/.idea/
