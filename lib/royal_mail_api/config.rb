@@ -3,11 +3,13 @@ module RoyalMailApi
     attr_accessor :username,
       :password,
       :adapter,
-      :wsdl,
+      :shipping_wsdl,
+      :tracking_wsdl,
       :ssl_ca_cert_file,
       :ssl_cert_file,
       :ssl_cert_key_file,
-      :endpoint,
+      :shipping_endpoint,
+      :tracking_endpoint,
       :application_id,
       :logger
 

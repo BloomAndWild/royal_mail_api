@@ -2,7 +2,7 @@ require 'erb'
 require 'ostruct'
 
 class XmlBuilder < OpenStruct
-  attr_reader :request
+  attr_reader :request, :type
 
   SPECIAL_CHARACTER_MAP = {
     '"' => "&quot;",
@@ -12,8 +12,9 @@ class XmlBuilder < OpenStruct
     ">" => "&gt;"
   }
 
-  def initialize(request, attrs={})
+  def initialize(request, attrs={}, type='shipping')
     @request = request
+    @type = type
 
     attrs = attrs.reduce({}) do |hash,(k,v)|
       hash[k]=parse_special_characters(v); hash
@@ -46,7 +47,7 @@ class XmlBuilder < OpenStruct
   end
 
   def envelope
-    build_xml('envelope.xml')
+    build_xml("#{type}_envelope.xml")
   end
 
   def parse_special_characters(str)
