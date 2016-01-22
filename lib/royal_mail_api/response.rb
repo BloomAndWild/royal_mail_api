@@ -5,12 +5,21 @@ module RoyalMailApi
       :parser,
       :errors,
       :warnings,
-      :shipments
+      :shipments,
+      :tracking_detail
 
     Shipment = Struct.new(
       :item_id,
       :shipment_number,
       :valid_from
+    )
+
+    TrackingDetail = Struct.new(
+      :date,
+      :time,
+      :header,
+      :code,
+      :summary
     )
 
     def initialize(response)
@@ -24,12 +33,12 @@ module RoyalMailApi
       parser.parse(xml, attr)
     end
 
-    def parse_all(xml, attr)
-      parser.parse_all(xml, attr)
+    def parse_all(xml, attr, force_remove_namespaces=false)
+      parser.parse_all(xml, attr, force_remove_namespaces)
     end
 
-    def parse_text(xml, attr)
-      parser.parse_text(xml, attr)
+    def parse_text(xml, attr, force_remove_namespaces=false)
+      parser.parse_text(xml, attr, force_remove_namespaces)
     end
 
     def set_attrs(response)
@@ -39,6 +48,7 @@ module RoyalMailApi
       set_errors
       set_warnings
       set_shipments
+      set_tracking_detail
     end
 
     def set_errors
@@ -67,6 +77,16 @@ module RoyalMailApi
           parse_text(shipment, "validFrom")
         )
       end
+    end
+
+    def set_tracking_detail
+      @tracking_detail = TrackingDetail.new(
+        parse_text(body, "eventDate", true),
+        parse_text(body, "eventTime", true),
+        parse_text(body, "header", true),
+        parse_text(body, "code", true),
+        parse_text(body, "summaryLine", true)
+      )
     end
   end
 end
