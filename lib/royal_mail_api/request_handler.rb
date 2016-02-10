@@ -5,11 +5,11 @@ module RoyalMailApi
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
           xml = handler.build_xml(attrs)
-          config.logger.info("#{request_name}: #{xml}")
+          config.logger.debug("#{request_name}: #{xml}")
           handler.savon.call(request_name, xml: xml)
         rescue Savon::SOAPFault => e
-          config.logger.error("#{request_name} #{e.http.code}")
-          config.logger.error("ERROR XML: #{e.xml}")
+          config.logger.debug("#{request_name} #{e.http.code}")
+          config.logger.debug("ERROR XML: #{e.xml}")
           raise RoyalMailApi::SoapError.new({
             xml: e.xml,
             error_code: e.http.code
@@ -55,7 +55,7 @@ module RoyalMailApi
         'shipping'
       else
         error_message = "Request type #{request_name} is not supported"
-        config.logger.error(error_message)
+        config.logger.debug(error_message)
         raise ArgumentError error_message
       end
     end
