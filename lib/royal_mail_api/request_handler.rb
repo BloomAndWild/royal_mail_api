@@ -5,15 +5,9 @@ module RoyalMailApi
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
           xml = handler.build_xml(attrs)
-          config.logger.debug("#{request_name}: #{xml}")
           handler.savon.call(request_name, xml: xml)
         rescue Savon::SOAPFault => e
-          config.logger.debug("#{request_name} #{e.http.code}")
-          config.logger.debug("ERROR XML: #{e.xml}")
-          raise RoyalMailApi::SoapError.new({
-            xml: e.xml,
-            error_code: e.http.code
-          })
+          raise RoyalMailApi::SoapError.new(xml: e.xml, error_code: e.http.code)
         end
       end
 
@@ -40,7 +34,11 @@ module RoyalMailApi
         ssl_cert_file: config.ssl_cert_file,
         ssl_cert_key_file: config.ssl_cert_key_file,
         open_timeout: 600,
-        read_timeout: 600
+        read_timeout: 600,
+        logger: config.logger,
+        log_level: config.logger.level.zero? ? :debug : :info,
+        log: config.logger.level.zero?,
+        pretty_print_xml: true,
       )
     end
 
