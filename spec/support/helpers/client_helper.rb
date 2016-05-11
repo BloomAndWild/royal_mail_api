@@ -9,6 +9,7 @@ def configure_client
     config.ssl_cert_file = File.join(RoyalMailApi.root, 'tmp', 'certs', 'mycert.pem')
     config.ssl_cert_key_file = File.join(RoyalMailApi.root, 'tmp', 'certs', 'mykey.pem')
     config.shipping_endpoint = "https://api.royalmail.com/shipping/onboarding"
+    config.tracking_endpoint = "https://api.royalmail.com/tracking"
     config.logger = Logger.new(STDOUT)
   end
 end
