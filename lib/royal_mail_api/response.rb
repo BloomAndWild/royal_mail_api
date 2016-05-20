@@ -6,12 +6,18 @@ module RoyalMailApi
       :errors,
       :warnings,
       :shipments,
+      :label_image,
       :tracking_detail
 
     Shipment = Struct.new(
       :item_id,
       :shipment_number,
       :valid_from
+    )
+
+    LabelImage = Struct.new(
+      :barcode1D,
+      :barcode2D
     )
 
     TrackingDetail = Struct.new(
@@ -48,6 +54,7 @@ module RoyalMailApi
       set_errors
       set_warnings
       set_shipments
+      set_label
       set_tracking_detail
     end
 
@@ -77,6 +84,13 @@ module RoyalMailApi
           parse_text(shipment, "validFrom")
         )
       end
+    end
+
+    def set_label
+      @label_image = LabelImage.new(
+        parse_text(body, "image1DBarcode", true),
+        parse_text(body, "image2DMatrix", true)
+      )
     end
 
     def set_tracking_detail
