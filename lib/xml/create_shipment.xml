@@ -1,74 +1,81 @@
 <soapenv:Body>
   <v2:createShipmentRequest>
-      <v2:integrationHeader>
-          <v1:version>2</v1:version>
-          <v1:identification>
-              <v1:applicationId><%= application_id %></v1:applicationId>
-              <v1:transactionId><%= transaction_id %></v1:transactionId>
-          </v1:identification>
-      </v2:integrationHeader>
-      <v2:requestedShipment>
-        <v2:shipmentType>
+    <v2:integrationHeader>
+      <v1:version>2</v1:version>
+      <v1:identification>
+        <v1:applicationId><%= application_id %></v1:applicationId>
+        <v1:transactionId><%= transaction_id %></v1:transactionId>
+      </v1:identification>
+    </v2:integrationHeader>
+    <v2:requestedShipment>
+      <v2:shipmentType>
+        <code>
+          Delivery
+        </code>
+      </v2:shipmentType>
+      <v2:serviceOccurrence>
+        1
+      </v2:serviceOccurrence>
+      <v2:serviceType>
+        <code>
+          T
+        </code>
+      </v2:serviceType>
+      <v2:serviceOffering>
+        <serviceOfferingCode>
           <code>
-            Delivery
+            TPN
           </code>
-        </v2:shipmentType>
-        <v2:serviceOccurrence>
-          1
-        </v2:serviceOccurrence>
-        <v2:serviceType>
-          <code>
-            T
-          </code>
-        </v2:serviceType>
-        <v2:serviceOffering>
-          <serviceOfferingCode>
-            <code>
-              TPN
-            </code>
-          </serviceOfferingCode>
-        </v2:serviceOffering>
-        <v2:shippingDate><%= shipping_date %></v2:shippingDate>
-        <v2:recipientContact>
-          <v2:name><%= user_name %></v2:name>
-          <v2:complementaryName></v2:complementaryName>
-          <% if try(:telephone_number) %>
-            <v2:telephoneNumber>
-                <countryCode><%= country_code || '0044' %></countryCode>
-                <telephoneNumber><%= telephone_number %></telephoneNumber>
-            </v2:telephoneNumber>
-          <% end %>
-          <v2:electronicAddress>
-              <electronicAddress><%= email %></electronicAddress>
-          </v2:electronicAddress>
-        </v2:recipientContact>
-        <v2:recipientAddress>
-            <addressLine1><%= address_line1 %></addressLine1>
-            <addressLine2><%= try(:address_line2) %></addressLine2>
-            <postTown><%= post_town %></postTown>
-            <postcode><%= post_code %></postcode>
-            <country>
-                <countryCode>
-                    <code>GB</code>
-                </countryCode>
-            </country>
-        </v2:recipientAddress>
-        <v2:items>
-          <v2:item>
-            <v2:numberOfItems>1</v2:numberOfItems>
-            <v2:weight>
-                <unitOfMeasure>
-                    <unitOfMeasureCode>
-                        <code>g</code>
-                    </unitOfMeasureCode>
-                </unitOfMeasure>
-                <value><%= weight %></value>
-            </v2:weight>
-          </v2:item>
-        </v2:items>
-        <v2:customerReference>CustSuppRef1</v2:customerReference>
-        <v2:senderReference>SenderReference1</v2:senderReference>
-        <v2:safePlace><%= try(:safe_place) %></v2:safePlace>
-      </v2:requestedShipment>
+        </serviceOfferingCode>
+      </v2:serviceOffering>
+      <v2:serviceEnhancements>
+        <v2:enhancementType>
+          <serviceEnhancementCode>
+            <code>14</code>
+          </serviceEnhancementCode>
+        </v2:enhancementType>
+      </v2:serviceEnhancements>
+      <v2:shippingDate><%= shipping_date %></v2:shippingDate>
+      <v2:recipientContact>
+        <v2:name><%= user_name %></v2:name>
+        <v2:complementaryName></v2:complementaryName>
+        <% if try(:telephone_number) %>
+        <v2:telephoneNumber>
+          <countryCode><%= country_code || '0044' %></countryCode>
+          <telephoneNumber><%= telephone_number %></telephoneNumber>
+        </v2:telephoneNumber>
+        <% end %>
+        <v2:electronicAddress>
+          <electronicAddress><%= email %></electronicAddress>
+        </v2:electronicAddress>
+      </v2:recipientContact>
+      <v2:recipientAddress>
+        <addressLine1><%= address_line1 %></addressLine1>
+        <addressLine2><%= try(:address_line2) %></addressLine2>
+        <postTown><%= post_town %></postTown>
+        <postcode><%= post_code %></postcode>
+        <country>
+          <countryCode>
+            <code>GB</code>
+          </countryCode>
+        </country>
+      </v2:recipientAddress>
+      <v2:items>
+        <v2:item>
+          <v2:numberOfItems>1</v2:numberOfItems>
+          <v2:weight>
+            <unitOfMeasure>
+              <unitOfMeasureCode>
+                <code>g</code>
+              </unitOfMeasureCode>
+            </unitOfMeasure>
+            <value><%= weight %></value>
+          </v2:weight>
+        </v2:item>
+      </v2:items>
+      <v2:customerReference>CustSuppRef1</v2:customerReference>
+      <v2:senderReference>SenderReference1</v2:senderReference>
+      <v2:safePlace><%= try(:safe_place) %></v2:safePlace>
+    </v2:requestedShipment>
   </v2:createShipmentRequest>
 </soapenv:Body>
