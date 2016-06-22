@@ -73,8 +73,8 @@
           </v2:weight>
         </v2:item>
       </v2:items>
-      <v2:customerReference>CustSuppRef1</v2:customerReference>
-      <v2:senderReference>SenderReference1</v2:senderReference>
+      <v2:customerReference></v2:customerReference>
+      <v2:senderReference></v2:senderReference>
       <v2:safePlace><%= try(:safe_place) %></v2:safePlace>
     </v2:requestedShipment>
   </v2:createShipmentRequest>
