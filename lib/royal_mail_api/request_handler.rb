@@ -30,15 +30,17 @@ module RoyalMailApi
         wsdl: wsdl,
         endpoint: endpoint,
         namespace: endpoint,
-        ssl_ca_cert_file: config.ssl_ca_cert_file,
-        ssl_cert_file: config.ssl_cert_file,
-        ssl_cert_key_file: config.ssl_cert_key_file,
         open_timeout: 600,
         read_timeout: 600,
         logger: config.logger,
         log_level: config.logger.level.zero? ? :debug : :info,
         log: config.logger.level.zero?,
         pretty_print_xml: true,
+        headers: {
+          'accept' => 'application/xml',
+          'x-ibm-client-id' => config.headers['client_id'],
+          'x-ibm-client-secret' => config.headers['client_secret']
+        }
       )
     end
 
