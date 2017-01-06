@@ -37,9 +37,10 @@ module RoyalMailApi
         log: config.logger.level.zero?,
         pretty_print_xml: true,
         headers: {
-          'accept' => 'application/xml',
+          'accept' => 'application/soap+xml',
           'x-ibm-client-id' => config.headers['client_id'],
-          'x-ibm-client-secret' => config.headers['client_secret']
+          'x-ibm-client-secret' => config.headers['client_secret'],
+          'soapAction' => soap_action
         }
       )
     end
@@ -100,6 +101,12 @@ module RoyalMailApi
 
     def config
       self.class.config
+    end
+
+    def soap_action
+      formatted_request_name = request_name.to_s.split("_").each {|s| s.capitalize! }.join("")
+      formatted_request_name[0] = formatted_request_name[0].downcase
+      formatted_request_name
     end
   end
 end
