@@ -39,8 +39,8 @@ module RoyalMailApi
         pretty_print_xml: true,
         headers: {
           'accept' => 'application/xml',
-          "X-IBM-Client-Id" => ENV['RM_CLIENT_ID'],
-          "X-IBM-Client-Secret" => ENV['RM_CLIENT_SECRET'],
+          "X-IBM-Client-Id" => config.client_id,
+          "X-IBM-Client-Secret" => config.client_secret,
           'context-type'  => 'text/xml'
         },
       )
