@@ -24,7 +24,7 @@
       <v2:serviceOffering>
         <serviceOfferingCode>
           <code>
-            TPN
+            <%= service_code %>
           </code>
         </serviceOfferingCode>
       </v2:serviceOffering>

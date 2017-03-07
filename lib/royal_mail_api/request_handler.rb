@@ -21,6 +21,7 @@ module RoyalMailApi
     end
 
     def build_xml(attrs={})
+      attrs[:service_code] = service_code(attrs[:service])
       XmlBuilder.new(request_name, attrs.merge(security_attrs), request_type).build
     end
 
@@ -73,6 +74,15 @@ module RoyalMailApi
           config.tracking_endpoint
         when 'shipping'
           config.shipping_endpoint
+      end
+    end
+
+    def service_code service
+      case service
+      when 'tracked'
+        'TPN'
+      when 'tracked_high_volume'
+        'TPM'
       end
     end
 
