@@ -6,18 +6,19 @@ module RoyalMailApi
       :errors,
       :warnings,
       :shipments,
+      :cancellations,
       :label_image,
       :tracking_detail
 
     Shipment = Struct.new(
       :item_id,
       :shipment_number,
-      :valid_from
+      :valid_from,
     )
 
     LabelImage = Struct.new(
       :barcode1D,
-      :barcode2D
+      :barcode2D,
     )
 
     TrackingDetail = Struct.new(
@@ -25,7 +26,13 @@ module RoyalMailApi
       :time,
       :header,
       :code,
-      :summary
+      :summary,
+    )
+
+    Cancellation = Struct.new(
+      :code,
+      :valid_from,
+      :shipment_number,
     )
 
     def initialize(response)
@@ -54,6 +61,7 @@ module RoyalMailApi
       set_errors
       set_warnings
       set_shipments
+      set_cancellations
       set_label
       set_tracking_detail
     end
@@ -82,6 +90,16 @@ module RoyalMailApi
           parse_text(shipment, "itemId"),
           parse_text(shipment, "shipmentNumber"),
           parse_text(shipment, "validFrom")
+        )
+      end
+    end
+
+    def set_cancellations
+      @cancellations = parse_all(body, "completedCancelInfo").map do |cancellation|
+        Cancellation.new(
+          parse_text(cancellation, 'code'),
+          parse_text(cancellation, 'validFrom'),
+          parse_text(cancellation, 'shipmentNumber')
         )
       end
     end

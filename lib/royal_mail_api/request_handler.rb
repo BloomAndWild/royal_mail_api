@@ -50,7 +50,7 @@ module RoyalMailApi
       case request_name
       when :get_single_item_summary
         'tracking'
-      when :create_shipment, :print_label
+      when :create_shipment, :print_label, :cancel_shipment
         'shipping'
       else
         error_message = "Request type #{request_name} is not supported"
