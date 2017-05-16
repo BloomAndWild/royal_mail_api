@@ -12,7 +12,8 @@ describe RoyalMailApi::RequestHandler do
       address_line1: '44-46 Morningside Road',
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
-      weight: 900
+      weight: 900,
+      service: 'tracked',
     }
   }
 
@@ -45,6 +46,23 @@ describe RoyalMailApi::RequestHandler do
 
       it "are converted to xml entity references" do
         expect(@response.http.code).to eq 200
+      end
+    end
+  end
+
+  describe "service code" do
+    let(:xml) { described_class.new(:create_shipment).build_xml(base_attrs) }
+
+    context "tracked service" do
+      it "uses the correct Royal Mail service code" do
+        expect(xml).to include 'TPN'
+      end
+    end
+
+    context "THV (Tracked High Volume) service" do
+      it "uses the correct Royal Mail service code" do
+        base_attrs[:service] = 'tracked_high_volume'
+        expect(xml).to include 'TPM'
       end
     end
   end
