@@ -28,7 +28,7 @@ in initializers/royal_mail_api.rb
   RoyalMailApi::Client.configure do |config|
     config.application_id = 'your Royal Mail application id'
     config.username = 'your Royal Mail username'
-    config.password = ''your Royal Mail password'
+    config.password = 'your Royal Mail password'
     config.adapter = library used for http requests (eg. httpclient, excon)
     config.wsdl = 'path to your wsdl file'
     config.ssl_ca_cert_file = 'path to your Royal Mail ca cert file'
@@ -87,4 +87,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
   https://github.com/savonrb/savon/issues/491
   https://github.com/savonrb/savon/issues/297
 
-  This is a consistent issue, so best to play around. 
+  This is a consistent issue, so best to play around.
