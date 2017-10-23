@@ -10,7 +10,8 @@ describe 'Errors' do
       address_line1: '44-46 Morningside Road',
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
-      weight: 900
+      weight: 900,
+      service: 'tracked'
     }
   }
 

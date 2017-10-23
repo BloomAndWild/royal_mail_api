@@ -91,12 +91,12 @@ module RoyalMailApi
     def set_tracking_details
       @tracking_details = parse_all(body, "itemSummary").map do |summary|
         TrackingDetail.new(
-          parse_text(sumary, "eventDate", true),
-          parse_text(sumary, "eventTime", true),
-          parse_text(sumary, "header", true),
-          parse_text(sumary, "code", true),
-          parse_text(sumary, "summaryLine", true),
-          parse_text(sumary, "trackingNumber", true),
+          parse_text(summary, "eventDate", true),
+          parse_text(summary, "eventTime", true),
+          parse_text(summary, "header", true),
+          parse_text(summary, "code", true),
+          parse_text(summary, "summaryLine", true),
+          parse_text(summary, "trackingNumber", true),
         )
       end
     end

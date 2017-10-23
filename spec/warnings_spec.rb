@@ -10,7 +10,8 @@ describe 'Warnings' do
       address_line1: '44-46 Morningside Road',
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
-      weight: 900
+      weight: 900,
+      service: 'tracked',
     }
   } 
 
@@ -21,7 +22,7 @@ describe 'Warnings' do
       VCR.use_cassette("warnings") do
         response = RoyalMailApi::RequestHandler.request(:create_shipment, attrs)
         parsed_response = RoyalMailApi::ResponseHandler.handle_response(response)
-        expect(parsed_response.warnings.count).to eq 2
+        expect(parsed_response.warnings.count).to eq 1
         expect(parsed_response.warnings.first.description).to_not be nil
         expect(parsed_response.warnings.first.description).to_not be_empty
       end
