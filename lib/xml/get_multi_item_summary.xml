@@ -1,0 +1,16 @@
+<soapenv:Body>
+  <v1:getMultiItemSummaryRequest>
+    <v1:integrationHeader>
+      <v11:version>1.0</v11:version>
+      <v11:identification>
+        <v11:applicationId><%= application_id %></v11:applicationId>
+        <v11:transactionId><%= transaction_id %></v11:transactionId>
+      </v11:identification>
+    </v1:integrationHeader>
+    <v1:trackingNumbers>
+      <% tracking_numbers.each do |tracking_number| %>
+        <v1:trackingNumber><%= tracking_number %></v1:trackingNumber>
+      <% end %>
+    </v1:trackingNumbers>
+  </v1:getMultiItemSummaryRequest>
+</soapenv:Body>

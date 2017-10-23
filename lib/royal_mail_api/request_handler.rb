@@ -47,7 +47,7 @@ module RoyalMailApi
 
     def request_type
       case request_name
-      when :get_single_item_summary
+      when :get_single_item_summary, :get_multi_item_summary
         'tracking'
       when :create_shipment, :print_label
         'shipping'
