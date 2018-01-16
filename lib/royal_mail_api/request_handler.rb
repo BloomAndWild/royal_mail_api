@@ -4,6 +4,7 @@ module RoyalMailApi
       def request(request_name, attrs={})
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
+          handler.configure(&block) if block_given?
           xml = handler.build_xml(attrs)
           handler.savon.call(request_name, xml: xml)
         rescue Savon::SOAPFault => e

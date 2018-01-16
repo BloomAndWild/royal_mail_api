@@ -27,6 +27,14 @@ describe RoyalMailApi::RequestHandler do
       end
     end
 
+    it 'yields the config object when passed a block' do
+      expect { |b| request(:create_shipment, attrs, &b) }.to yield_with_args(subject.config)
+    end
+
+    it 'does not yield the config object when not passed a block' do
+      expect { |b| request(:create_shipment, attrs) }.not_to yield_control
+    end
+
     describe '#create_shipment' do
       let(:attrs) { base_attrs }
       let(:default_cassette) { "create_shipment" }
