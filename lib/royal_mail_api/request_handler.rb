@@ -16,8 +16,16 @@ module RoyalMailApi
       end
     end
 
+    attr_accessor :config
+
     def initialize(request_name)
       @request_name = request_name
+
+      self.config = self.class.config.dup
+    end
+
+    def configure
+      yield config if block_given?
     end
 
     def build_xml(attrs={})
@@ -107,10 +115,6 @@ module RoyalMailApi
           nonce + creation_date + hashedpassword
         )
       }
-    end
-
-    def config
-      self.class.config
     end
   end
 end
