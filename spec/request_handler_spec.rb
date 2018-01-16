@@ -27,14 +27,6 @@ describe RoyalMailApi::RequestHandler do
       end
     end
 
-    it 'yields the config object when passed a block' do
-      expect { |b| request(:create_shipment, attrs, &b) }.to yield_with_args(subject.config)
-    end
-
-    it 'does not yield the config object when not passed a block' do
-      expect { |b| request(:create_shipment, attrs) }.not_to yield_control
-    end
-
     describe '#create_shipment' do
       let(:attrs) { base_attrs }
       let(:default_cassette) { "create_shipment" }
@@ -81,7 +73,7 @@ describe RoyalMailApi::RequestHandler do
     subject { described_class.new(:create_shipment) }
 
     describe '#config' do
-      it 'creates a copy of the config object' do
+      it 'creates a copy of the master config object' do
         expect(subject.config).not_to eql(described_class.config)
       end
     end
