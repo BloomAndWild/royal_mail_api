@@ -4,6 +4,7 @@ module RoyalMailApi
       def request(request_name, attrs={})
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
+          handler.configure(&block) if block_given?
           xml = handler.build_xml(attrs)
           handler.savon.call(request_name, xml: xml)
         rescue Savon::SOAPFault => e
@@ -16,8 +17,16 @@ module RoyalMailApi
       end
     end
 
+    attr_accessor :config
+
     def initialize(request_name)
       @request_name = request_name
+
+      self.config = self.class.config.dup
+    end
+
+    def configure
+      yield config if block_given?
     end
 
     def build_xml(attrs={})
@@ -51,7 +60,7 @@ module RoyalMailApi
 
     def request_type
       case request_name
-      when :get_single_item_summary
+      when :get_single_item_summary, :get_multi_item_summary
         'tracking'
       when :create_shipment, :print_label
         'shipping'
@@ -107,10 +116,6 @@ module RoyalMailApi
           nonce + creation_date + hashedpassword
         )
       }
-    end
-
-    def config
-      self.class.config
     end
   end
 end
