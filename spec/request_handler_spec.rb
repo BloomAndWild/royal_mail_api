@@ -66,4 +66,22 @@ describe RoyalMailApi::RequestHandler do
       end
     end
   end
+
+  context 'configuration' do
+    before { configure_client }
+
+    subject { described_class.new(:create_shipment) }
+
+    describe '#config' do
+      it 'creates a copy of the master config object' do
+        expect(subject.config).not_to eql(described_class.config)
+      end
+    end
+
+    describe '#configure' do
+      it 'yields the config object' do
+        expect { |b| subject.configure(&b) }.to yield_with_args(subject.config)
+      end
+    end
+  end
 end
