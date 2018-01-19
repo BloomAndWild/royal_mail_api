@@ -1,7 +1,7 @@
 module RoyalMailApi
   class RequestHandler
     class << self
-      def request(request_name, attrs={})
+      def request(request_name, attrs={}, &block)
         begin
           handler = RoyalMailApi::RequestHandler.new(request_name)
           handler.configure(&block) if block_given?
