@@ -10,7 +10,7 @@ module RoyalMailApi
       :application_id,
       :client_id,
       :client_secret,
-      :logger
-
+      :logger,
+      :service_occurrence
   end
 end
