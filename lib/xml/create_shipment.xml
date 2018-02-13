@@ -14,7 +14,7 @@
         </code>
       </v2:shipmentType>
       <v2:serviceOccurrence>
-        1
+        <%= service_occurrence %>
       </v2:serviceOccurrence>
       <v2:serviceType>
         <code>
@@ -24,7 +24,7 @@
       <v2:serviceOffering>
         <serviceOfferingCode>
           <code>
-            TPN
+            <%= service_code %>
           </code>
         </serviceOfferingCode>
       </v2:serviceOffering>

@@ -12,7 +12,8 @@ describe RoyalMailApi::RequestHandler do
       address_line1: '44-46 Morningside Road',
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
-      weight: 900
+      weight: 900,
+      service: 'tracked',
     }
   }
 
@@ -49,20 +50,37 @@ describe RoyalMailApi::RequestHandler do
     end
   end
 
-  describe "parsing Savon::SOAPFault errors" do
-    let(:attrs) { base_attrs.merge({ user_name: 'Bloom & Wild Unit 2.22' }) }
+  describe "service code" do
+    let(:xml) { described_class.new(:create_shipment).build_xml(base_attrs) }
 
-    before do
-      stub_const("XmlBuilder::SPECIAL_CHARACTER_MAP", {'&' => '&'})
+    context "tracked service" do
+      it "uses the correct Royal Mail service code" do
+        expect(xml).to include 'TPN'
+      end
     end
 
-    it "raises a RoyalMailApi::SoapError" do
-      configure_client
+    context "THV (Tracked High Volume) service" do
+      it "uses the correct Royal Mail service code" do
+        base_attrs[:service] = 'tracked_high_volume'
+        expect(xml).to include 'TPM'
+      end
+    end
+  end
 
-      VCR.use_cassette("Savon::SOAPFault") do
-        expect{ RoyalMailApi::RequestHandler.request(:create_shipment, attrs) }.to raise_error RoyalMailApi::SoapError
-        # expect(@response.description).to eq "env:Client error: The message was incorrectly formed or contained incorrect information."
-        # expect(@response.code).to eq 500
+  context 'configuration' do
+    before { configure_client }
+
+    subject { described_class.new(:create_shipment) }
+
+    describe '#config' do
+      it 'creates a copy of the master config object' do
+        expect(subject.config).not_to eql(described_class.config)
+      end
+    end
+
+    describe '#configure' do
+      it 'yields the config object' do
+        expect { |b| subject.configure(&b) }.to yield_with_args(subject.config)
       end
     end
   end

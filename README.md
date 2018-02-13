@@ -1,8 +1,6 @@
 # RoyalMailApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/royal_mail_api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Wrapper for Royal Mail's SOAP API.
 
 ## Installation
 
@@ -28,14 +26,15 @@ in initializers/royal_mail_api.rb
   RoyalMailApi::Client.configure do |config|
     config.application_id = 'your Royal Mail application id'
     config.username = 'your Royal Mail username'
-    config.password = ''your Royal Mail password'
+    config.password = 'your Royal Mail password'
+    config.client_id = 'your royal mail app's client_id (register an application at https://developer.royalmail.net)'
+    config.client_secret = 'your royal mail app's client_secret'
+    config.shipping_wsdl = 'path to your shipping api wsdl file'
+    config.tracking_wsdl = 'path to your tracking api wsdl file'
+    config.shipping_endpoint = 'https://api.royalmail.net/shipping/v2'
+    config.tracking_endpoint = 'https://api.royalmail.net/tracking'
     config.adapter = library used for http requests (eg. httpclient, excon)
-    config.wsdl = 'path to your wsdl file'
-    config.ssl_ca_cert_file = 'path to your Royal Mail ca cert file'
-    config.ssl_cert_file = 'path to your Royal Mail cert file'
-    config.ssl_cert_key_file = 'path to your Royal Mail key file'
-    config.endpoint = api endpoint for sandbox/production (eg. "https://api.royalmail.com/shipping/onboarding")
-    config.logger = Logger.new(STDOUT)
+    config.logger = however you wish to log (Logger.new(STDOUT), Rails.logger etc)
   end
 ```
 
@@ -87,4 +86,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
   https://github.com/savonrb/savon/issues/491
   https://github.com/savonrb/savon/issues/297
 
-  This is a consistent issue, so best to play around. 
+  This is a consistent issue, so best to play around.

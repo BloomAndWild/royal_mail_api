@@ -7,7 +7,8 @@ module RoyalMailApi
       :warnings,
       :shipments,
       :label_image,
-      :tracking_detail
+      :tracking_detail,
+      :tracking_details
 
     Shipment = Struct.new(
       :item_id,
@@ -56,6 +57,7 @@ module RoyalMailApi
       set_shipments
       set_label
       set_tracking_detail
+      set_tracking_details
     end
 
     def set_errors
@@ -82,6 +84,19 @@ module RoyalMailApi
           parse_text(shipment, "itemId"),
           parse_text(shipment, "shipmentNumber"),
           parse_text(shipment, "validFrom")
+        )
+      end
+    end
+
+    def set_tracking_details
+      @tracking_details = parse_all(body, "itemSummary").each_with_object({}) do |summary, h|
+        tracking_number = parse_text(summary, "trackingNumber", true)
+        h[tracking_number] = TrackingDetail.new(
+          parse_text(summary, "eventDate", true),
+          parse_text(summary, "eventTime", true),
+          parse_text(summary, "header", true),
+          parse_text(summary, "code", true),
+          parse_text(summary, "summaryLine", true),
         )
       end
     end
