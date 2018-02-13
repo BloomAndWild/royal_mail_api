@@ -84,4 +84,23 @@ describe RoyalMailApi::RequestHandler do
       end
     end
   end
+
+  context 'get_single_item_history' do
+    before { configure_client }
+
+    let(:application_id) { 123 }
+    let(:transaction_id) { 999 }
+    let(:attrs) do
+      {
+        service: 'tracked_high_volume'
+      }
+    end
+
+    subject { described_class.new(:get_single_item_history) }
+    let(:xml) { subject.build_xml(attrs) }
+
+    it 'generates the expected xml' do
+      expect(xml).to include 'getSingleItemHistoryRequest'
+    end
+  end
 end
