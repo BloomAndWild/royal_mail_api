@@ -114,7 +114,8 @@ module RoyalMailApi
         encoded_nonce: Base64.encode64(nonce),
         password_digest: Digest::SHA1.base64digest(
           nonce + creation_date + hashedpassword
-        )
+        ),
+        service_occurrence: config.service_occurrence
       }
     end
   end

@@ -12,5 +12,6 @@ def configure_client
     config.tracking_endpoint = 'https://api.royalmail.net/tracking'
     config.logger = Logger.new(STDOUT)
     config.logger.level = 0
+    config.service_occurrence = 1
   end
 end
