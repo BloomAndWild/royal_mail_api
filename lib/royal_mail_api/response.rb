@@ -29,6 +29,13 @@ module RoyalMailApi
       :summary
     )
 
+    TrackingHistory = Struct.new(
+      :date,
+      :point,
+      :time,
+      :header
+    )
+
     def initialize(response)
       @parser = RoyalMailApi::XmlParser.new
       set_attrs(response)
@@ -58,6 +65,7 @@ module RoyalMailApi
       set_label
       set_tracking_detail
       set_tracking_details
+      set_tracking_history
     end
 
     def set_errors
@@ -84,6 +92,17 @@ module RoyalMailApi
           parse_text(shipment, "itemId"),
           parse_text(shipment, "shipmentNumber"),
           parse_text(shipment, "validFrom")
+        )
+      end
+    end
+
+    def set_tracking_history
+      @tracking_details = parse_all(body, "trackDetail").each_with_object([]) do |track_detail, arr|
+        arr << TrackingHistory.new(
+          parse_text(track_detail, "trackDate", true),
+          parse_text(track_detail, "trackPoint", true),
+          parse_text(track_detail, "trackTime", true),
+          parse_text(track_detail, "header", true),
         )
       end
     end
