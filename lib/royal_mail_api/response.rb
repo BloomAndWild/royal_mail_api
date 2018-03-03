@@ -8,7 +8,8 @@ module RoyalMailApi
       :shipments,
       :label_image,
       :tracking_detail,
-      :tracking_details
+      :tracking_details,
+      :tracking_history
 
     Shipment = Struct.new(
       :item_id,
@@ -97,7 +98,7 @@ module RoyalMailApi
     end
 
     def set_tracking_history
-      @tracking_details = parse_all(body, "trackDetail").each_with_object([]) do |track_detail, arr|
+      @tracking_history = parse_all(body, "trackDetail").each_with_object([]) do |track_detail, arr|
         arr << TrackingHistory.new(
           parse_text(track_detail, "trackDate", true),
           parse_text(track_detail, "trackPoint", true),
