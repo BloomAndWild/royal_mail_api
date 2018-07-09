@@ -38,6 +38,10 @@ describe RoyalMailApi::RequestHandler do
       it "returns a tracking code for tracked shipments" do
         expect(@response.body).to have_hash_key :shipment_number
       end
+
+      it "includes dateTime" do
+        expect(@response.body).to have_hash_key :date_time
+      end
     end
 
     describe "with special characters" do
