@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe 'Errors' do
+  # test
   let(:valid_attrs) {
     {
       transaction_id: 1,
