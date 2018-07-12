@@ -11,7 +11,7 @@ describe RoyalMailApi::ResponseHandler do
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
       weight: 900,
-      service: 'tracked',
+      service: 'tracked_high_volume',
     }
   }
 
