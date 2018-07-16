@@ -1,6 +1,7 @@
 <soapenv:Body>
   <v1:getMultiItemSummaryRequest>
     <v1:integrationHeader>
+      <v1:dateTime><%= date_time_now %></v1:dateTime>
       <v11:version>1.0</v11:version>
       <v11:identification>
         <v11:applicationId><%= application_id %></v11:applicationId>

@@ -102,7 +102,7 @@ module RoyalMailApi
       # TODO move into own value object
 
       password = config.password
-      creation_date =  Time.now.strftime('%Y-%m-%dT%H:%M:%SZ')
+      date_time_now =  Time.now.strftime('%Y-%m-%dT%H:%M:%SZ')
       nonce =  rand(999999).to_s
 
       hashedpassword = Digest::SHA1.digest(password)
@@ -110,10 +110,10 @@ module RoyalMailApi
       {
         username: config.username,
         application_id: config.application_id,
-        creation_date: creation_date,
+        date_time_now: date_time_now,
         encoded_nonce: Base64.encode64(nonce),
         password_digest: Digest::SHA1.base64digest(
-          nonce + creation_date + hashedpassword
+          nonce + date_time_now + hashedpassword
         ),
         service_occurrence: config.service_occurrence
       }

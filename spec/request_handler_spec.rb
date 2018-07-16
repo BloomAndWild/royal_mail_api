@@ -13,7 +13,7 @@ describe RoyalMailApi::RequestHandler do
       post_town: 'Edinburgh',
       post_code: 'EH10 4BF',
       weight: 900,
-      service: 'tracked',
+      service: 'tracked_high_volume',
     }
   }
 
@@ -38,6 +38,10 @@ describe RoyalMailApi::RequestHandler do
       it "returns a tracking code for tracked shipments" do
         expect(@response.body).to have_hash_key :shipment_number
       end
+
+      it "includes dateTime" do
+        expect(@response.body).to have_hash_key :date_time
+      end
     end
 
     describe "with special characters" do
@@ -53,15 +57,8 @@ describe RoyalMailApi::RequestHandler do
   describe "service code" do
     let(:xml) { described_class.new(:create_shipment).build_xml(base_attrs) }
 
-    context "tracked service" do
-      it "uses the correct Royal Mail service code" do
-        expect(xml).to include 'TPN'
-      end
-    end
-
     context "THV (Tracked High Volume) service" do
       it "uses the correct Royal Mail service code" do
-        base_attrs[:service] = 'tracked_high_volume'
         expect(xml).to include 'TPM'
       end
     end
