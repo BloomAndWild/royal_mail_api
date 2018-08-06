@@ -111,7 +111,7 @@ module RoyalMailApi
         username: config.username,
         application_id: config.application_id,
         date_time_now: date_time_now,
-        encoded_nonce: Base64.encode64(nonce),
+        encoded_nonce: Base64.encode64(nonce).strip,
         password_digest: Digest::SHA1.base64digest(
           nonce + date_time_now + hashedpassword
         ),
