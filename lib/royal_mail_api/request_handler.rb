@@ -67,7 +67,7 @@ module RoyalMailApi
       else
         error_message = "Request type #{request_name} is not supported"
         config.logger&.debug(error_message)
-        raise ArgumentError error_message
+        raise ArgumentError, error_message
       end
     end
 
