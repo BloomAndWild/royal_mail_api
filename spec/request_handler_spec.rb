@@ -100,4 +100,27 @@ describe RoyalMailApi::RequestHandler do
       expect(xml).to include 'getSingleItemHistoryRequest'
     end
   end
+
+  describe 'cancel shipment' do
+    around do |spec|
+      configure_client
+
+      VCR.use_cassette('cancel_shipment') do
+        @response = RoyalMailApi::RequestHandler.request(:cancel_shipment, { transaction_id: 999, tracking_number: 'RQ221150289GB' })
+        spec.run
+      end
+    end
+
+    it "returns a parsed hash of the xml response" do
+      expect(@response.body).to be_a Hash
+    end
+
+    it "returns a tracking code for cancelled shipments" do
+      expect(@response.body).to have_hash_key :shipment_number
+    end
+
+    it "includes dateTime" do
+      expect(@response.body).to have_hash_key :date_time
+    end
+  end
 end

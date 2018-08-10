@@ -1,0 +1,16 @@
+<soapenv:Body>
+  <v2:cancelShipmentRequest>
+    <v2:integrationHeader>
+      <v1:dateTime><%= date_time_now %></v1:dateTime>
+      <v1:version>2</v1:version>
+      <v1:identification>
+        <v1:applicationId><%= application_id %></v1:applicationId>
+        <v1:transactionId><%= transaction_id %></v1:transactionId>
+      </v1:identification>
+    </v2:integrationHeader>
+    <v2:cancelShipments>
+      <v2:shipmentNumber><%= tracking_number %></v2:shipmentNumber>
+    </v2:cancelShipments>
+  </v2:cancelShipmentRequest>
+</soapenv:Body>
+
