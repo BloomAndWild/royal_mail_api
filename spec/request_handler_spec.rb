@@ -102,11 +102,13 @@ describe RoyalMailApi::RequestHandler do
   end
 
   describe 'cancel shipment' do
+    let(:attrs) { base_attrs }
+
     around do |spec|
       configure_client
 
       VCR.use_cassette('cancel_shipment') do
-        @response = RoyalMailApi::RequestHandler.request(:cancel_shipment, { transaction_id: 999, tracking_number: 'RQ221150289GB' })
+        @response = RoyalMailApi::RequestHandler.request(:cancel_shipment, { transaction_id: 1, tracking_number: 'TT040080157GB' })
         spec.run
       end
     end
@@ -115,12 +117,16 @@ describe RoyalMailApi::RequestHandler do
       expect(@response.body).to be_a Hash
     end
 
-    it "returns a tracking code for cancelled shipments" do
-      expect(@response.body).to have_hash_key :shipment_number
+    it "returns a tracking code of cancelled shipments" do
+      cancelled_shipments = @response.body.dig(:cancel_shipment_response, :completed_cancel_info, :completed_cancel_shipments)
+
+      expect(cancelled_shipments).to eq(shipment_number: 'TT040080157GB')
     end
 
     it "includes dateTime" do
-      expect(@response.body).to have_hash_key :date_time
+      date_time = @response.body.dig(:cancel_shipment_response, :integration_header, :date_time)
+
+      expect(date_time).to be_a(DateTime)
     end
   end
 end
