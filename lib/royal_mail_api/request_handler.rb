@@ -62,12 +62,12 @@ module RoyalMailApi
       case request_name
       when :get_single_item_summary, :get_multi_item_summary, :get_single_item_history
         'tracking'
-      when :create_shipment, :print_label
+      when :create_shipment, :print_label, :cancel_shipment
         'shipping'
       else
         error_message = "Request type #{request_name} is not supported"
         config.logger&.debug(error_message)
-        raise ArgumentError error_message
+        raise ArgumentError, error_message
       end
     end
 
