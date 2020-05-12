@@ -20,7 +20,8 @@ module RoyalMailApi
 
     LabelImage = Struct.new(
       :barcode1D,
-      :barcode2D
+      :barcode2D,
+      :pdf_label
     )
 
     TrackingDetail = Struct.new(
@@ -132,7 +133,8 @@ module RoyalMailApi
     def set_label
       @label_image = LabelImage.new(
         parse_text(body, "image1DBarcode", true),
-        parse_text(body, "image2DMatrix", true)
+        parse_text(body, "image2DMatrix", true),
+        parse_text(body, "label", true),
       )
     end
 
