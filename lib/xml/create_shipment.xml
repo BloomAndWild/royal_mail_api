@@ -43,8 +43,10 @@
         </v2:electronicAddress>
       </v2:recipientContact>
       <v2:recipientAddress>
+        <buildingName><%= try(:building_name) %></buildingName>
         <addressLine1><%= address_line1 %></addressLine1>
         <addressLine2><%= try(:address_line2) %></addressLine2>
+        <addressLine3><%= try(:address_line3) %></addressLine3>
         <postTown><%= post_town %></postTown>
         <postcode><%= post_code %></postcode>
         <country>
